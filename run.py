@@ -25,7 +25,7 @@ class Windturbine:
             self._npower = int(input('Enter Nominal Power [kW]: '))
             return True
         except ValueError:
-            print('Please, round the figures for Power and Year.')
+            print(f'{bcolors.YELLOW}Please, round the figures for Power and Year.')
             return False
     def __str__(self):
         return '\t'.join(str(x) for x in [self._uname, self._mfg, self._model, self._country, self._year, self._npower])
@@ -50,21 +50,21 @@ while True:
 
     print(' ✔ Add Windturbine to Inventory          [1]')
     print(' ✔ Delete Windturnine from Inventory     [2]')
-    print(' ✔ View Current Inventory                [3]')
+    print(' ✔ List all Windturbines                 [3]')
     print(' ✔ Update Windturbine in Inventory       [4]')
     print(' ✔ Export Current Inventory              [5]')
     print(' ✔ Exit                                  [6]')
-    userInput=input('Select 1 out of the options shown below: ') 
+    userInput=input('Select 1-6: ') 
     if userInput=="1": 
         #Add a Windturbines
         inventory.addTurbine()
     elif userInput=='2':
         #Remove a Windturbine
         if len(inventory.turbines) < 1:
-            print('There are not WindTurbines in inventory')
+            print('WindTurbine(s) not found!!!')
             continue
         inventory.viewInventory()
-        item = int(input('Enter the number related to the Windturbine to be deleted: '))
+        item = int(input('Enter # of Windturbine to be deleted: '))
         if item - 1  > len(inventory.turbines):
             print('Wrong number provided')
         else:
@@ -74,16 +74,16 @@ while True:
     elif userInput == '3':
         #list of the Windturbines recorded
         if len(inventory.turbines) < 1:
-            print('There are not WindTurbines in inventory')
+            print('WindTurbine(s) not found!!!')
             continue
         inventory.viewInventory()
     elif userInput == '4':
         #Edit Windturbine recorded 
         if len(inventory.turbines) < 1:
-            print('There are not WindTurbines in inventory')
+            print('WindTurbine(s) not found!!!')
             continue
         inventory.viewInventory()
-        item = int(input('Enter the number related to the Windturbine to be deleted: '))
+        item = int(input('Select # of Windturbine to be updated: '))
         if item - 1  > len(inventory.turbines):
             print('Wrong number provided')
         else:
@@ -96,7 +96,7 @@ while True:
     elif userInput == '5':
         #Create a file txt to export it 
         if len(inventory.turbines) < 1:
-            print('There are not WindTurbines in inventory')
+            print('WindTurbine(s) not found!!!')
             continue
         f = open('windturbine_inventory.txt', 'w')
         f.write('\t'.join(['Agent', 'Mfg', 'Model', 'Country', 'Year', 'Power']))
