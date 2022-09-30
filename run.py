@@ -1,9 +1,11 @@
-#Light program version of WindTurbines Inventory.
+# Light program version of WindTurbines Inventory.
 
 
 class bcolors:
     GREEN = '\033[92m'
     YELLOW = '\033[93m'
+
+
 print(f'{bcolors.YELLOW} ✇ Second Hand Windturbines. Inventory Tool ✇ ')
 
 
