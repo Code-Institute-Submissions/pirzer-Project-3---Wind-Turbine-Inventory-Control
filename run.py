@@ -48,7 +48,7 @@ class Inventory:
         turbine = Windturbine()
         if turbine.addTurbine() is True:
             self.turbines.append(turbine)
-            print ()
+            print()
             print('Fantastic!!! 😎, The Windturbine was added ✇')
     def viewInventory(self):
         print('\t'.join(['', 'Agent', 'Mfg', 'Model', 'Country', 'Year', 'Power']))
