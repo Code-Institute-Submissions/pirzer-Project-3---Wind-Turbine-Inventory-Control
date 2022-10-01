@@ -105,10 +105,10 @@ while True:
             if windturbine.addTurbine() is True:
                 inventory.turbines.remove(inventory.turbines[item - 1])
                 inventory.turbines.insert(item - 1, windturbine)
-                print ()
+                print()
                 print('Great 😊, Windturbine was updated')
     elif userInput == '5':
-        #Create a file txt to export it 
+        # Create a file txt to export it 
         if len(inventory.turbines) < 1:
             print('WindTurbine(s) not found!!!')
             continue
@@ -116,13 +116,13 @@ while True:
         f.write('\t'.join(['Agt', 'Mfg', 'Model', 'Ctry', 'Year', 'Power']))
         f.write('\n')
         for turbile in inventory.turbines:
-            f.write('%s\n' %turbile)
+            f.write('%s\n' % turbile)
         f.close()
         print('Cool!! 😎 info exported to the file')
     elif userInput == '6':
-        #exit the loop
+        # exit the loop
         print('Talk to Soon 😉')
         break
     else:
-        #Wrong user input
+        # Wrong user input
         print('Invalid Input. Please try again.')
