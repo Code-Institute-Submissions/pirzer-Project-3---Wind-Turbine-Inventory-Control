@@ -56,6 +56,7 @@ class Inventory:
 
     def viewInventory(self):
         print('\t'.join(['', 'Agt', 'Mfg', 'Model', 'Ctry', 'Year', 'Power']))
+        print("=====================================================")
         for idx, turbine in enumerate(self.turbines):
             print(idx + 1, end='\t')
             print(turbine)
@@ -70,7 +71,7 @@ while True:
     print(' ✔ Update Windturbine in Inventory       [4]')
     print(' ✔ Export Current Inventory              [5]')
     print(' ✔ Exit                                  [6]')
-    print("==============================================")
+    print("============================================")
     userInput = input('Select 1-6: ') 
     if userInput == "1":
         # Add a Windturbines
