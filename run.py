@@ -68,9 +68,9 @@ while True:
     print(' ✔ Export Current Inventory              [5]')
     print(' ✔ Exit                                  [6]')
     print("==============================================")
-    userInput=input('Select 1-6: ') 
-    if userInput=="1": 
-        #Add a Windturbines
+    userInput = input('Select 1-6: ') 
+    if userInput == "1":
+        # Add a Windturbines
         inventory.addTurbine()
     elif userInput=='2':
         #Remove a Windturbine
