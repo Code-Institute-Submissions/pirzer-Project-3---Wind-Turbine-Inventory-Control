@@ -13,12 +13,6 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open('wind_turbines')
 
-inventory = SHEET.worksheet('inventory')
-
-data = inventory.get_all_values()
-
-print(data)
-
 
 class Bcolors:
     """Class representing colors options"""
@@ -28,9 +22,9 @@ class Bcolors:
 
 the_date = datetime.now().date()
 print(" ")
-print(f'{Bcolors.YELLOW}✇ Second Hand Windturbines. Inventory Tool ✇ ')
+print(f'{Bcolors.YELLOW}✇  Second Hand Windturbines. Inventory Tool ✇ ')
 print(the_date)
-print("============================================")
+print("=======================================================")
 
 
 class Windturbine:
@@ -76,6 +70,7 @@ class Inventory:
             print('Fantastic!!! 😎, The Windturbine was added ✇')
 
     def viewInventory(self):
+        print("=====================================================")
         print('\t'.join(['', 'Agt', 'Mfg', 'Model', 'Ctry', 'Year', 'Power']))
         print("=====================================================")
         for idx, turbine in enumerate(self.turbines):
@@ -86,13 +81,14 @@ class Inventory:
 inventory = Inventory()
 while True:
 
-    print(' ✔ Add Windturbine to Inventory          [1]')
-    print(' ✔ Delete Windturnine from Inventory     [2]')
-    print(' ✔ List all Windturbines                 [3]')
-    print(' ✔ Update Windturbine in Inventory       [4]')
-    print(' ✔ Export Current Inventory              [5]')
-    print(' ✔ Exit                                  [6]')
-    print("============================================")
+    print("=======================================================")
+    print(' ✔ Add Windturbine to Inventory                     [1]')
+    print(' ✔ Delete Windturnine from Inventory                [2]')
+    print(' ✔ List all Windturbines                            [3]')
+    print(' ✔ Update Windturbine in Inventory                  [4]')
+    print(' ✔ Export Current Inventory                         [5]')
+    print(' ✔ Exit                                             [6]')
+    print("=======================================================")
     userInput = input('Select 1-6:\n ')
     if userInput == "1":
         # Add a Windturbines
