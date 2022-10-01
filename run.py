@@ -11,7 +11,7 @@ the_date = datetime.now().date()
 print(" ")
 print(f'{bcolors.YELLOW} ✇ Second Hand Windturbines. Inventory Tool ✇ ')
 print(the_date)
-print("==============================================")
+print("============================================")
 
 
 class Windturbine:
