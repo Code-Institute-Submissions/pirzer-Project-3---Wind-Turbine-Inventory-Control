@@ -2,27 +2,27 @@
 from datetime import datetime
 
 
-class bcolors:
+class Bcolors:
     GREEN = '\033[92m'
     YELLOW = '\033[93m'
 
 
 the_date = datetime.now().date()
 print(" ")
-print(f'{bcolors.YELLOW}✇ Second Hand Windturbines. Inventory Tool ✇ ')
+print(f'{Bcolors.YELLOW}✇ Second Hand Windturbines. Inventory Tool ✇ ')
 print(the_date)
 print("============================================")
 
 
 class Windturbine:
     def __init__(self):
-        self._name = ''
+        self._uname = ''
         self._mfg = ''
         self._model = ''
         self._country = ''
         self._year = 0
         self._npower = 0
-        
+
     def addTurbine(self):
         try:
             self._uname = input('Agent-Name: ')
@@ -33,12 +33,12 @@ class Windturbine:
             self._npower = int(input('Enter Nominal Power [kW]: '))
             return True
         except ValueError:
-            print(f'{bcolors.YELLOW}Enter year & power,and filled the form')
+            print(f'{Bcolors.YELLOW}Enter year & power,and filled the form')
             return False
 
     def __str__(self):
         return '\t'.join(str(x) for x in [
-            self._uname, self._mfg, self._model, 
+            self._uname, self._mfg, self._model,
             self._country, self._year, self._npower
         ])
 
@@ -72,7 +72,7 @@ while True:
     print(' ✔ Export Current Inventory              [5]')
     print(' ✔ Exit                                  [6]')
     print("============================================")
-    userInput = input('Select 1-6: ') 
+    userInput = input('Select 1-6: ')
     if userInput == "1":
         # Add a Windturbines
         inventory.addTurbine()
@@ -96,7 +96,7 @@ while True:
             continue
         inventory.viewInventory()
     elif userInput == '4':
-        # Edit Windturbine recorded 
+        # Edit Windturbine recorded
         if len(inventory.turbines) < 1:
             print('WindTurbine(s) not found!!!')
             continue
@@ -112,11 +112,11 @@ while True:
                 print()
                 print('Great 😊, Windturbine was updated')
     elif userInput == '5':
-        # Create a file txt to export it 
+        # Create a file txt to export it
         if len(inventory.turbines) < 1:
             print('WindTurbine(s) not found!!!')
             continue
-        f = open('windturbine_inventory.txt', 'w')
+        f = open('windturbine_inventory.txt', 'w', encoding='utf-8')
         f.write('\t'.join(['Agt', 'Mfg', 'Model', 'Ctry', 'Year', 'Power']))
         f.write('\n')
         for turbile in inventory.turbines:

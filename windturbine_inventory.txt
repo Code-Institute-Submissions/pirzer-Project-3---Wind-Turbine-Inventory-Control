@@ -1,3 +1,2 @@
-Agent	Mfg	Model	Country	Year	Power
-Pedro	Gamesa	G345	Spain	2003	400
-Carlos	Vestas	V225	Denmark	2009	40
+Agt	Mfg	Model	Ctry	Year	Power
+Pedro	GE	GE100	Vza	2020	2000
