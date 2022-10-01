@@ -27,12 +27,12 @@ class Windturbine:
 
     def addTurbine(self):
         try:
-            self._uname = input('Agent-Name: ')
-            self._mfg = input('Enter Windturbine Manufacturer: ')
-            self._model = input('Enter Windturbine Model: ')
-            self._country = input('Enter Country Location: ')
-            self._year = int(input('Enter Windturbine year: '))
-            self._npower = int(input('Enter Nominal Power [kW]: '))
+            self._uname = input('Agent-Name:\n ')
+            self._mfg = input('Enter Windturbine Manufacturer:\n ')
+            self._model = input('Enter Windturbine Model:\n ')
+            self._country = input('Enter Country Location:\n ')
+            self._year = int(input('Enter Windturbine year:\n '))
+            self._npower = int(input('Enter Nominal Power [kW]:\n '))
             return True
         except ValueError:
             print(f'{Bcolors.YELLOW}Enter year & power,and filled the form')
@@ -75,7 +75,7 @@ while True:
     print(' ✔ Export Current Inventory              [5]')
     print(' ✔ Exit                                  [6]')
     print("============================================")
-    userInput = input('Select 1-6: ')
+    userInput = input('Select 1-6:\n ')
     if userInput == "1":
         # Add a Windturbines
         inventory.addTurbine()
@@ -85,7 +85,7 @@ while True:
             print('WindTurbine(s) not found!!!')
             continue
         inventory.viewInventory()
-        item = int(input('Enter # of Windturbine to be deleted: '))
+        item = int(input('Enter # of Windturbine to be deleted:\n '))
         if item - 1 > len(inventory.turbines):
             print('Wrong number provided')
         else:
@@ -104,7 +104,7 @@ while True:
             print('WindTurbine(s) not found!!!')
             continue
         inventory.viewInventory()
-        item = int(input('Select # of Windturbine to be updated: '))
+        item = int(input('Select # of Windturbine to be updated:\n '))
         if item - 1 > len(inventory.turbines):
             print('Wrong number provided')
         else:

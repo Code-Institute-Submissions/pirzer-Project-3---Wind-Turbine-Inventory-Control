@@ -1,2 +1,2 @@
 Agt	Mfg	Model	Ctry	Year	Power
-Pedro	GE	GE100	Vza	2020	2000
+Pedro	GE	200	SPN	2009	50
