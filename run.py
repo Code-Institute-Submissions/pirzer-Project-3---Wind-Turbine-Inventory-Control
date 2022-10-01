@@ -1,4 +1,5 @@
 # Light program version of WindTurbines Inventory.
+from datetime import datetime
 
 
 class bcolors:
@@ -6,8 +7,11 @@ class bcolors:
     YELLOW = '\033[93m'
 
 
+the_date = datetime.now().date()
+print(" ")
 print(f'{bcolors.YELLOW} ✇ Second Hand Windturbines. Inventory Tool ✇ ')
-
+print(the_date)
+print("==============================================")
 
 class Windturbine:
     def __init__(self):
@@ -56,6 +60,7 @@ while True:
     print(' ✔ Update Windturbine in Inventory       [4]')
     print(' ✔ Export Current Inventory              [5]')
     print(' ✔ Exit                                  [6]')
+    print("==============================================")
     userInput=input('Select 1-6: ') 
     if userInput=="1": 
         #Add a Windturbines
