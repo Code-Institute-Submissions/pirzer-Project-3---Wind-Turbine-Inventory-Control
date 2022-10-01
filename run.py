@@ -57,6 +57,7 @@ class Inventory:
             print(idx + 1, end='\t')
             print(turbine)
 
+
 inventory = Inventory()
 while True:
 
