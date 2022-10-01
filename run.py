@@ -22,7 +22,7 @@ class Windturbine:
         self._country = ''
         self._year = 0        
         self._npower = 0   
-             
+
     def addTurbine(self):
         try:
             self._uname = input('Agent-Name: ')
@@ -33,8 +33,9 @@ class Windturbine:
             self._npower = int(input('Enter Nominal Power [kW]: '))
             return True
         except ValueError:
-            print(f'{bcolors.YELLOW}Please, round the figures for Power and Year.')
+            print(f'{bcolors.YELLOW}Enter year & power,and filled the form')
             return False
+            
     def __str__(self):
         return '\t'.join(str(x) for x in [self._uname, self._mfg, self._model, self._country, self._year, self._npower])
 
