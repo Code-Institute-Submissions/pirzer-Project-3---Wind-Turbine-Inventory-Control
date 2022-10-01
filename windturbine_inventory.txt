@@ -1,2 +1,2 @@
 Agt	Mfg	Model	Ctry	Year	Power
-Pedro	GE	200	SPN	2009	50
+Pedro	Vestas	V250	GER	2010	500
