@@ -102,7 +102,7 @@ while True:
             print('Wrong number provided')
         else:
             windturbine = Windturbine()
-            if windturbine.addTurbine() is True :
+            if windturbine.addTurbine() is True:
                 inventory.turbines.remove(inventory.turbines[item - 1])
                 inventory.turbines.insert(item - 1, windturbine)
                 print ()
