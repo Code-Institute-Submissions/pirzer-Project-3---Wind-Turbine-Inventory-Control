@@ -21,7 +21,8 @@ class Windturbine:
         self._model = ''
         self._country = ''
         self._year = 0        
-        self._npower = 0
+        self._npower = 0   
+             
     def addTurbine(self):
         try:
             self._uname = input('Agent-Name: ')
