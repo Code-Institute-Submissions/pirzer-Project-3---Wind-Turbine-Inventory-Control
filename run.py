@@ -9,7 +9,7 @@ class bcolors:
 
 the_date = datetime.now().date()
 print(" ")
-print(f'{bcolors.YELLOW} ✇ Second Hand Windturbines. Inventory Tool ✇ ')
+print(f'{bcolors.YELLOW}✇ Second Hand Windturbines. Inventory Tool ✇ ')
 print(the_date)
 print("============================================")
 
