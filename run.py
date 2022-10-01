@@ -79,7 +79,7 @@ while True:
             continue
         inventory.viewInventory()
         item = int(input('Enter # of Windturbine to be deleted: '))
-        if item - 1  > len(inventory.turbines):
+        if item - 1 > len(inventory.turbines):
             print('Wrong number provided')
         else:
             inventory.turbines.remove(inventory.turbines[item - 1])
