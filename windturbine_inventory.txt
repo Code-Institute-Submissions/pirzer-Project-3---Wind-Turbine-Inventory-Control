@@ -1,2 +1,2 @@
 Agt	Mfg	Model	Ctry	Year	Power
-Pedro	Ned	NEd2	NED	2000	2000
+2	1	1	1	1	1
