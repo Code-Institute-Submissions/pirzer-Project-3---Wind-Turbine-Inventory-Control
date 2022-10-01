@@ -50,9 +50,10 @@ class Inventory:
             self.turbines.append(turbine)
             print()
             print('Fantastic!!! 😎, The Windturbine was added ✇')
+
     def viewInventory(self):
-        print('\t'.join(['', 'Agent', 'Mfg', 'Model', 'Country', 'Year', 'Power']))
-        for idx, turbine in enumerate(self.turbines) :
+        print('\t'.join(['', 'Agt', 'Mfg', 'Model', 'Ctry', 'Year', 'Power']))
+        for idx, turbine in enumerate(self.turbines):
             print(idx + 1, end='\t')
             print(turbine)
 
@@ -111,7 +112,7 @@ while True:
             print('WindTurbine(s) not found!!!')
             continue
         f = open('windturbine_inventory.txt', 'w')
-        f.write('\t'.join(['Agent', 'Mfg', 'Model', 'Country', 'Year', 'Power']))
+        f.write('\t'.join(['Agt', 'Mfg', 'Model', 'Ctry', 'Year', 'Power']))
         f.write('\n')
         for turbile in inventory.turbines:
             f.write('%s\n' %turbile)
