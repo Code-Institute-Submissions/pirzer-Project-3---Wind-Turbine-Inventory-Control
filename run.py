@@ -43,10 +43,10 @@ class Windturbine:
 class Inventory:
     def __init__(self):
         self.turbines = []
-        
+
     def addTurbine(self):
         turbine = Windturbine()
-        if turbine.addTurbine() == True:
+        if turbine.addTurbine() is True:
             self.turbines.append(turbine)
             print ()
             print('Fantastic!!! 😎, The Windturbine was added ✇')
