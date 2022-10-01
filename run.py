@@ -72,8 +72,8 @@ while True:
     if userInput == "1":
         # Add a Windturbines
         inventory.addTurbine()
-    elif userInput=='2':
-        #Remove a Windturbine
+    elif userInput == '2':
+        # Remove a Windturbine
         if len(inventory.turbines) < 1:
             print('WindTurbine(s) not found!!!')
             continue
@@ -83,7 +83,7 @@ while True:
             print('Wrong number provided')
         else:
             inventory.turbines.remove(inventory.turbines[item - 1])
-            print ()
+            print()
             print('Windturbine deleted')
     elif userInput == '3':
         #list of the Windturbines recorded
