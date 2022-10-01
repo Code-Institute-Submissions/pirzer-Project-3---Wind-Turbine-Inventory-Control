@@ -1,8 +1,9 @@
-# Light program version of WindTurbines Inventory.
+""" Light program version of WindTurbines Inventory """
 from datetime import datetime
 
 
 class Bcolors:
+    """Class representing colors options"""
     GREEN = '\033[92m'
     YELLOW = '\033[93m'
 
@@ -15,6 +16,7 @@ print("============================================")
 
 
 class Windturbine:
+    """Class representing Windturbine details as follows"""
     def __init__(self):
         self._uname = ''
         self._mfg = ''
@@ -44,6 +46,7 @@ class Windturbine:
 
 
 class Inventory:
+    """Class representing Windturbine to be added"""
     def __init__(self):
         self.turbines = []
 
