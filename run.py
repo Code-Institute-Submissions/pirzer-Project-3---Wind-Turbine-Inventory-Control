@@ -35,13 +35,15 @@ class Windturbine:
         except ValueError:
             print(f'{bcolors.YELLOW}Enter year & power,and filled the form')
             return False
-            
+
     def __str__(self):
         return '\t'.join(str(x) for x in [self._uname, self._mfg, self._model, self._country, self._year, self._npower])
+
 
 class Inventory:
     def __init__(self):
         self.turbines = []
+        
     def addTurbine(self):
         turbine = Windturbine()
         if turbine.addTurbine() == True:
