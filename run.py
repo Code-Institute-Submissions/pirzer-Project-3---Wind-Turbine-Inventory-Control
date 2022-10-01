@@ -13,6 +13,7 @@ print(f'{bcolors.YELLOW} ✇ Second Hand Windturbines. Inventory Tool ✇ ')
 print(the_date)
 print("==============================================")
 
+
 class Windturbine:
     def __init__(self):
         self._name = ''
