@@ -86,19 +86,19 @@ while True:
             print()
             print('Windturbine deleted')
     elif userInput == '3':
-        #list of the Windturbines recorded
+        # list of the Windturbines recorded
         if len(inventory.turbines) < 1:
             print('WindTurbine(s) not found!!!')
             continue
         inventory.viewInventory()
     elif userInput == '4':
-        #Edit Windturbine recorded 
+        # Edit Windturbine recorded 
         if len(inventory.turbines) < 1:
             print('WindTurbine(s) not found!!!')
             continue
         inventory.viewInventory()
         item = int(input('Select # of Windturbine to be updated: '))
-        if item - 1  > len(inventory.turbines):
+        if item - 1 > len(inventory.turbines):
             print('Wrong number provided')
         else:
             windturbine = Windturbine()
