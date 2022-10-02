@@ -1,31 +1,48 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# <font color="Green">Wind Turbines 2nd✋ - Inventory tool</font>  
+The following project consists of a **quick tool for tracking wind turbines in inventory** for small business enterprises. The current code is set up with **Python 3.8 version**. The present case is applied to a fictiony company aimed at repowering wind turbines, ie,  2nd hand wind turbines. 
 
-Welcome pirzer,
+### Objectives
+* Develop a friendly checking inventory tool for 2nd hand wind turbines to be used by warehouse staff.
+*Produce a txt file to show the wind turbines in inventory.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+### User Stories
 
-## Reminders
+- ### As an employee of an inventory department, I would like the following:
+  - ### Friendly tool to add wind turbines to the company's inventory.
+  - ### Friendly tool to remove wind turbines from the company's inventory.
+  - ### Friendly tool to see a quick breakdown of the company's inventory. 
+  - ### Friendly tool to update/modify details of the wind turbines in inventory. 
+  - ### Friendly tool to print out wind turbines from the company's inventory.
+  - ### Friendly option to exit the software.
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+### Feature Planning - Snapshot.
 
-## Creating the Heroku app
+- ### Smooth user navigation process when the tool is used.
+- ### Display current date.
+- ### Smooth Add, Remove, Visuallitation, and Update of data for the user. 
+- ### Export option of a txt file for a basic breakdown of the data entered by the user.
+- ### Straight forward option to exit.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+### Design
+Once upon a time, Vincent Van Gogh said: **"How wonderful yellow is. It stands for the sun."** In our era, Color psychology suggests that the yellow colour owns positive characteristics such as attention-grabbing, energetic, and helpful for reading at last. Therefore, the colour of the characters for the user is **yellow** to compensate for interface limitations. 
 
-1. `heroku/python`
-2. `heroku/nodejs`
+The software is a raw tool without images, however, the design includes **symbol emoji** at the beginning and at the end of this tool.
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+Additionally, the software notifies the user when a wind turbine is added, removed, updated, and exported. Likewise, an exit message is included also.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+### Structure
+This support tool is built up as follows:
+- ### Main Menu: ADD, DELETE, LIST,  UDPATE, EXPORT, & EXIT options. See image 1 below.
+(/Images/Main_Menu.JPG)
 
-Connect your GitHub repository and deploy as normal.
 
-## Constraints
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+- ### ADD option: Agent Name, Manufacturer, Model, Country location, year made, Nominal Power [kW].
+- ### DELETE option: Select the item to remove and message confirmation.
+- ### LIST option: Display Item(s) in Inventory.
+- ### Export option: Same fields as ADD option to be updated.
+- ### EXIT option: Option to end.
 
------
-Happy coding!
+
+
+
