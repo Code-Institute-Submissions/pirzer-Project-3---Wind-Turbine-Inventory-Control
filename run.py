@@ -130,7 +130,7 @@ while True:
         print('Cool!! 😎 info exported to the file')
     elif userInput == '6':
         # exit the loop
-        print('Talk to Soon 😉')
+        print('talk soon to you 😉')
         break
     else:
         # Wrong user input
