@@ -90,7 +90,7 @@ class Windturbine:
         print(type(_npow))
         if not _npow.isnumeric():
             print("Inside if statement for _npow")
-            print(type(_npow))
+            print(int(_npow))
             raise ValueError(
                 f"""
                 {Fore.YELLOW}{Fore.RESET}You typed {Style.BRIGHT}{_npow}
