@@ -1,5 +1,5 @@
 """ Light program version of WindTurbines Inventory """
-import string
+# import string
 from datetime import datetime
 import colorama
 from colorama import Fore, Style
@@ -35,7 +35,7 @@ class Windturbine:
             self._uname = self._is_valid_uname(input('Agent-Name:\n '))
             self._mfg = input('Enter Windturbine Manufacturer:\n ')
             self._model = input('Enter Windturbine Model:\n ')
-            self._country = input('Enter Country Location:\n ')
+            self._country = self._is_valid_country(input('Enter Country:\n '))
             self._year = int(input('Enter Windturbine year:\n '))
             self._npower = int(input('Enter Nominal Power [kW]:\n '))
             return True
@@ -52,6 +52,16 @@ class Windturbine:
                 """
             )
         return self._uname
+
+    def _is_valid_country(self, _country):
+        if not _country.isalpha():
+            raise ValueError(
+                f"""
+                {Fore.YELLOW}Please use only characters (a-z){Fore.RESET}
+                You typed {Style.BRIGHT}{_country}{Style.RESET_ALL}
+                """
+            )
+        return self._country
 
     def __str__(self):
         return '\t'.join(str(x) for x in [
@@ -160,7 +170,7 @@ def validate_user(letter):
         # if letter not in alphabet:
         if letter.isalpha():
             return True
-            
+
     except ValueError as err:
         # raise ValueError(
         #         f"Single letters (a-z) "
@@ -168,17 +178,16 @@ def validate_user(letter):
         #     )
         print(f"{Fore.RED}Wrong data:{Fore.RESET} {err}.\n")
         return False
-    
 
 
 def get_user_letter():
     """
     Asking user for agent-name input
     """
-    while True:
-        user_letter = input('Agent-Name:\n ')
+#     while True:
+#         user_letter = input('Agent-Name:\n ')
 
-        if validate_user(user_letter):
-            break
-    return user_letter
+#         # if validate_user(user_letter):
+#         #     break
+#    #  return user_letter
 # This is a new line that ends the file
