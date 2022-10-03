@@ -2,7 +2,7 @@
 # import string
 from datetime import datetime
 import colorama
-from colorama import Fore, Style
+from colorama import Fore, Back, Style
 
 colorama.init(autoreset=True)
 
@@ -146,7 +146,7 @@ while True:
     elif userInput == '2':
         # Remove a Windturbine
         if len(inventory.turbines) < 1:
-            print('WindTurbine(s) not found!!!')
+            print(Back.RED + 'WindTurbine(s) not found!!!')
             continue
         inventory.viewInventory()
         item = int(input('Enter # of Windturbine to be deleted:\n '))
@@ -159,13 +159,13 @@ while True:
     elif userInput == '3':
         # list of the Windturbines recorded
         if len(inventory.turbines) < 1:
-            print('WindTurbine(s) not found!!!')
+            print(Back.RED + 'WindTurbine(s) not found!!!')
             continue
         inventory.viewInventory()
     elif userInput == '4':
         # Edit Windturbine recorded
         if len(inventory.turbines) < 1:
-            print('WindTurbine(s) not found!!!')
+            print(Back.RED + 'WindTurbine(s) not found!!!')
             continue
         inventory.viewInventory()
         item = int(input('Select # of Windturbine to be updated:\n '))
@@ -181,7 +181,7 @@ while True:
     elif userInput == '5':
         # Create a file txt to export it
         if len(inventory.turbines) < 1:
-            print('WindTurbine(s) not found!!!')
+            print(Back.RED + 'WindTurbine(s) not found!!!')
             continue
         f = open('windturbine_inventory.txt', 'w', encoding='utf-8')
         f.write('\t'.join(['Agt', 'Mfg', 'Model', 'Ctry', 'Year', 'Power']))
