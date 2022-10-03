@@ -5,7 +5,7 @@ The following project consists of a **quick tool for tracking wind turbines in i
 * Develop a friendly checking inventory tool for 2nd hand wind turbines to be used by warehouse staff.
 *Produce a txt file to show the wind turbines in inventory.
 
-### User Stories
+### User Stories - UX
 
 - ### As an employee of an inventory department, I would like the following:
   - ### Friendly tool to add wind turbines to the company's inventory.
@@ -30,18 +30,49 @@ The software is a raw tool without images, however, the design includes **symbol
 
 Additionally, the software notifies the user when a wind turbine is added, removed, updated, and exported. Likewise, an exit message is included also.
 
-### Structure
-This support tool is built up as follows:
-- ### Main Menu: ADD, DELETE, LIST,  UDPATE, EXPORT, & EXIT options. See image 1 below.
-(/Images/Main_Menu.JPG)
+  ### Structure
+
+  This support tool is built up as follows:
+  - #### Main Menu: ADD, DELETE, LIST,  UDPATE, EXPORT, & EXIT options. See image 1 below.
+
+![./images/Main_Menu.JPG](./images/Main_Menu.JPG)
+<center>image 1</center>
+
+  - #### ADD option: Agent Name, Manufacturer, Model, Country location, year made, Nominal Power [kW]. See image 2 below.
+![./images/Main_Menu.JPG](./images/adding%20wind%20turbine.JPG)
+<center>image 2</center>
+
+  - #### DELETE option: Select the item to remove and message confirmation. See images 3 & 4 below.
+![./images/Main_Menu.JPG](./images/delete%20wind%20turbine%20option%202.JPG)
+<center>image 3</center>
+
+![./images/Main_Menu.JPG](./images/display%20inventory%20after%20deleting%20wind%20turbine.JPG)
+<center>image 4</center>
+
+  - #### LIST option: Display Item(s) in Inventory. See image 5 below.
+
+![./images/Main_Menu.JPG](./images/display%20windturbines.JPG)
+<center>image 5. This image prior to be deleted item 2.</center>
 
 
+  - #### Update option: Same fields as ADD option to be updated. See image 6 below.
 
-- ### ADD option: Agent Name, Manufacturer, Model, Country location, year made, Nominal Power [kW].
-- ### DELETE option: Select the item to remove and message confirmation.
-- ### LIST option: Display Item(s) in Inventory.
-- ### Export option: Same fields as ADD option to be updated.
-- ### EXIT option: Option to end.
+![./images/Main_Menu.JPG](./images/windturbine%20updated.JPG)
+<center>image 6</center>
+
+  - #### Export option: TXT File produced with the inventory info. See image 7 below.
+![./images/Main_Menu.JPG](./images/txt%20file%20exported.JPG)<center>image 7</center>
+
+
+  - #### EXIT option: Leave the tool. See image 8 below.
+![./images/Main_Menu.JPG](./images/exit%20option.JPG)<center>image 8</center>
+
+  ### Flowhart
+  - #### It can be found on the following link:
+  https://app.code2flow.com/ylb4Oj9KgP9t.pdf
+<center>o</center>
+  - #### Download the file named "flowchart.pdf"
+
 
 
 
