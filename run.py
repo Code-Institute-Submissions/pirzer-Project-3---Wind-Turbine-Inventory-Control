@@ -9,15 +9,16 @@ colorama.init(autoreset=True)
 
 class Bcolors:
     """Class representing colors options"""
-    GREEN = '\033[92m'
+    GRE = '\033[92m'
     YELLOW = '\033[93m'
+    RED = '\033[91m'
 
 
 the_date = datetime.now().date()
 print(" ")
-print(f'{Bcolors.YELLOW}✇  Second Hand Windturbines. Inventory Tool ✇ ')
-print(the_date)
-print("=======================================================")
+print(f'{Bcolors.GRE}✇  Second Hand Windturbines. Inventory Tool ✇ ')
+print(f'{Bcolors.GRE} the_date ')
+print('=======================================================')
 
 
 class Windturbine:
@@ -44,11 +45,11 @@ class Windturbine:
             return False
 
     def _is_valid_uname(self, _uname):
-        print("Inside is_valid_uname fucntion:")
-        print(_uname)
+        print("Validation")
+#        print(_uname)
         if not _uname.isalpha():
-            print("Inside if statement for _uname")
-            print(type(_uname))
+            print(f'{Bcolors.RED}No completed')
+#            print(type(_uname))
             raise ValueError(
                 f"""
                 {Fore.YELLOW}Please use only characters (a-z){Fore.RESET}
@@ -58,43 +59,43 @@ class Windturbine:
         return _uname
 
     def _is_valid_country(self, _country):
-        print("Inside is_valid_country fucntion:")
-        print(_country)
+        print("Validation")
+#        print(_country)
         if not _country.isalpha():
-            print("Inside if statement for _country")
-            print(type(_country))
+            print(f'{Bcolors.RED}No completed')
+#            print(type(_country))
             raise ValueError(
                 f"""
-                {Fore.YELLOW}{Fore.RESET}Wrong input{Style.BRIGHT}{_country}
-                {Style.RESET_ALL}
+                {Fore.YELLOW}Please use only characters (a-z){Fore.RESET}
+                You typed {Style.BRIGHT}{_country}{Style.RESET_ALL}
                 """
             )
         return _country
 
     def _is_valid_year(self, _year):
-        print("Inside is_valid_year fucntion:")
-        print(type(_year))
+        print("Validation")
+#        print(type(_year))
         if not _year.isnumeric():
-            print("Inside if statement for _year")
-            print(type(_year))
+            print(f'{Bcolors.RED}No completed')
+#            print(type(_year))
             raise ValueError(
                 f"""
-                {Fore.YELLOW}{Fore.RESET}You typed {Style.BRIGHT}{_year}
-                {Style.RESET_ALL}
+                {Fore.YELLOW}Please use only numbers (0-9){Fore.RESET}
+                You typed {Style.BRIGHT}{_year}{Style.RESET_ALL}
                 """
             )
         return _year
 
     def _is_valid_npow(self, _npow):
-        print("Inside is_valid_power fucntion:")
-        print(type(_npow))
+        print("Validation")
+#       print(type(_npow))
         if not _npow.isnumeric():
-            print("Inside if statement for _npow")
-            print(int(_npow))
+            print(f'{Bcolors.RED}No completed')
+#           print(type(_npow))
             raise ValueError(
                 f"""
-                {Fore.YELLOW}{Fore.RESET}You typed {Style.BRIGHT}{_npow}
-                {Style.RESET_ALL}
+                {Fore.YELLOW}Please use only numbers (0-9){Fore.RESET}
+                You typed {Style.BRIGHT}{_npow}{Style.RESET_ALL}
                 """
             )
         return _npow
@@ -119,9 +120,9 @@ class Inventory:
             print('Fantastic!!! 😎, The Windturbine was added ✇')
 
     def viewInventory(self):
-        print("=====================================================")
+        print('====================================================')
         print('\t'.join(['', 'Agt', 'Mfg', 'Model', 'Ctry', 'Year', 'Power']))
-        print("=====================================================")
+        print('====================================================')
         for idx, turbine in enumerate(self.turbines):
             print(idx + 1, end='\t')
             print(turbine)
@@ -138,7 +139,7 @@ while True:
     print(' ✔ Export Current Inventory                         [5]')
     print(' ✔ Exit                                             [6]')
     print("=======================================================")
-    userInput = input('Select 1-6:\n ')
+    userInput = input(f'{Bcolors.GRE}Select 1-6:\n ')
     if userInput == "1":
         # Add a Windturbines
         inventory.addTurbine()
@@ -196,34 +197,4 @@ while True:
     else:
         # Wrong user input
         print('Invalid Input. Please try again')
-
-
-def validate_user(letter):
-    """
-    Validate agents name field. Letters (a-z)
-    """
-    try:
-        # if letter not in alphabet:
-        if letter.isalpha():
-            return True
-
-    except ValueError as err:
-        # raise ValueError(
-        #         f"Single letters (a-z) "
-        #         f"You typed {Style.BRIGHT}{letter}{Style.RESET_ALL}"
-        #     )
-        print(f"{Fore.RED}Wrong data:{Fore.RESET} {err}.\n")
-        return False
-
-
-def get_user_letter():
-    """
-    Asking user for agent-name input
-    """
-#     while True:
-#         user_letter = input('Agent-Name:\n ')
-
-#         # if validate_user(user_letter):
-#         #     break
-#    #  return user_letter
 # This is a new line that ends the file
