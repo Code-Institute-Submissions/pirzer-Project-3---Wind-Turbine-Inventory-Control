@@ -28,7 +28,7 @@ class Windturbine:
         self._model = ''
         self._country = ''
         self._year = 0
-        self._npower = 0
+        self._npow = 0
 
     def addTurbine(self):
         try:
@@ -36,37 +36,73 @@ class Windturbine:
             self._mfg = input('Enter Windturbine Manufacturer:\n ')
             self._model = input('Enter Windturbine Model:\n ')
             self._country = self._is_valid_country(input('Enter Country:\n '))
-            self._year = int(input('Enter Windturbine year:\n '))
-            self._npower = int(input('Enter Nominal Power [kW]:\n '))
+            self._year = self._is_valid_year(input('Enter WT year:\n '))
+            self._npow = self._is_valid_npow(input('Power [kW]:\n '))
             return True
         except ValueError as err:
             print(f"{err}")
             return False
 
     def _is_valid_uname(self, _uname):
+        print("Inside is_valid_uname fucntion:")
+        print(_uname)
         if not _uname.isalpha():
+            print("Inside if statement for _uname")
+            print(type(_uname))
             raise ValueError(
                 f"""
                 {Fore.YELLOW}Please use only characters (a-z){Fore.RESET}
                 You typed {Style.BRIGHT}{_uname}{Style.RESET_ALL}
                 """
             )
-        return self._uname
+        return _uname
 
     def _is_valid_country(self, _country):
+        print("Inside is_valid_country fucntion:")
+        print(_country)
         if not _country.isalpha():
+            print("Inside if statement for _country")
+            print(type(_country))
             raise ValueError(
                 f"""
-                {Fore.YELLOW}Please use only characters (a-z){Fore.RESET}
-                You typed {Style.BRIGHT}{_country}{Style.RESET_ALL}
+                {Fore.YELLOW}{Fore.RESET}Wrong input{Style.BRIGHT}{_country}
+                {Style.RESET_ALL}
                 """
             )
-        return self._country
+        return _country
+
+    def _is_valid_year(self, _year):
+        print("Inside is_valid_year fucntion:")
+        print(type(_year))
+        if not _year.isnumeric():
+            print("Inside if statement for _year")
+            print(type(_year))
+            raise ValueError(
+                f"""
+                {Fore.YELLOW}{Fore.RESET}You typed {Style.BRIGHT}{_year}
+                {Style.RESET_ALL}
+                """
+            )
+        return _year
+
+    def _is_valid_npow(self, _npow):
+        print("Inside is_valid_power fucntion:")
+        print(type(_npow))
+        if not _npow.isnumeric():
+            print("Inside if statement for _npow")
+            print(type(_npow))
+            raise ValueError(
+                f"""
+                {Fore.YELLOW}{Fore.RESET}You typed {Style.BRIGHT}{_npow}
+                {Style.RESET_ALL}
+                """
+            )
+        return _npow
 
     def __str__(self):
         return '\t'.join(str(x) for x in [
             self._uname, self._mfg, self._model,
-            self._country, self._year, self._npower
+            self._country, self._year, self._npow
         ])
 
 

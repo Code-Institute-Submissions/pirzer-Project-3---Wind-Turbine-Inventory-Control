@@ -1,2 +1,3 @@
 Agt	Mfg	Model	Ctry	Year	Power
-	Gamesa	Gamesa123		2003	800
+John	Vestas	V300	IRD	2009	4000
+Juan	NEdwind	V80	NED	2009	800
