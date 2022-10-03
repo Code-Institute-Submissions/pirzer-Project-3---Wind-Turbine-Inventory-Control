@@ -31,7 +31,6 @@ The software is a raw tool without images, however, the design includes **symbol
 Additionally, the software notifies the user when a wind turbine is added, removed, updated, and exported. Likewise, an exit message is included also.
 
   ### Structure
-
   This support tool is built up as follows:
   - #### Main Menu: ADD, DELETE, LIST,  UDPATE, EXPORT, & EXIT options. See image 1 below.
 
@@ -68,10 +67,13 @@ Additionally, the software notifies the user when a wind turbine is added, remov
 ![./images/Main_Menu.JPG](./images/exit%20option.JPG)<center>image 8</center>
 
   ### Flowhart
-  - #### It can be found on the following link:
+  - #### See the link below:
   https://app.code2flow.com/ylb4Oj9KgP9t.pdf
 <center>o</center>
-  - #### Download the file named "flowchart.pdf"
+  - #### The flowchart can be downloaded also. "flowchart.pdf"
+
+ ### Design
+ 
 
 
 

@@ -1,5 +1,10 @@
 """ Light program version of WindTurbines Inventory """
+import string
 from datetime import datetime
+import colorama
+from colorama import Fore, Style
+
+colorama.init(autoreset=True)
 
 
 class Bcolors:
@@ -27,16 +32,26 @@ class Windturbine:
 
     def addTurbine(self):
         try:
-            self._uname = input('Agent-Name:\n ')
+            self._uname = self._is_valid_uname(input('Agent-Name:\n '))
             self._mfg = input('Enter Windturbine Manufacturer:\n ')
             self._model = input('Enter Windturbine Model:\n ')
             self._country = input('Enter Country Location:\n ')
             self._year = int(input('Enter Windturbine year:\n '))
             self._npower = int(input('Enter Nominal Power [kW]:\n '))
             return True
-        except ValueError:
-            print(f'{Bcolors.YELLOW}Enter year & power,and filled the form')
+        except ValueError as err:
+            print(f"{err}")
             return False
+
+    def _is_valid_uname(self, _uname):
+        if not _uname.isalpha():
+            raise ValueError(
+                f"""
+                Please use only characters (a-z)
+                You typed {Style.BRIGHT}{_uname}{Style.RESET_ALL}
+                """
+            )
+        return self._uname
 
     def __str__(self):
         return '\t'.join(str(x) for x in [
@@ -135,3 +150,35 @@ while True:
     else:
         # Wrong user input
         print('Invalid Input. Please try again')
+
+
+def validate_user(letter):
+    """
+    Validate agents name field. Letters (a-z)
+    """
+    try:
+        # if letter not in alphabet:
+        if letter.isalpha():
+            return True
+            
+    except ValueError as err:
+        # raise ValueError(
+        #         f"Single letters (a-z) "
+        #         f"You typed {Style.BRIGHT}{letter}{Style.RESET_ALL}"
+        #     )
+        print(f"{Fore.RED}Wrong data:{Fore.RESET} {err}.\n")
+        return False
+    
+
+
+def get_user_letter():
+    """
+    Asking user for agent-name input
+    """
+    while True:
+        user_letter = input('Agent-Name:\n ')
+
+        if validate_user(user_letter):
+            break
+    return user_letter
+# This is a new line that ends the file
