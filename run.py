@@ -47,7 +47,7 @@ class Windturbine:
         if not _uname.isalpha():
             raise ValueError(
                 f"""
-                Please use only characters (a-z)
+                {Fore.YELLOW}Please use only characters (a-z){Fore.RESET}
                 You typed {Style.BRIGHT}{_uname}{Style.RESET_ALL}
                 """
             )
