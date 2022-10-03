@@ -1,6 +1,6 @@
 """ Light program version of WindTurbines Inventory """
-# import string
 from datetime import datetime
+# import string
 import colorama
 from colorama import Fore, Back, Style
 
