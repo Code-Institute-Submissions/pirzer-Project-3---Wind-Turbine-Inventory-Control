@@ -135,7 +135,7 @@ while True:
     print(' ✔ Add Windturbine to Inventory                     [1]')
     print(' ✔ Delete Windturnine from Inventory                [2]')
     print(' ✔ List all Windturbines                            [3]')
-    print(' ✔ Update Windturbine in Inventory                  [4]')
+    print(' ✔ Update Windturbine in Inventory                  [x]')
     print(' ✔ Export Current Inventory                         [5]')
     print(' ✔ Exit                                             [6]')
     print("=======================================================")
@@ -162,22 +162,22 @@ while True:
             print(Back.RED + 'WindTurbine(s) not found!!!')
             continue
         inventory.viewInventory()
-    elif userInput == '4':
-        # Edit Windturbine recorded
-        if len(inventory.turbines) < 1:
-            print(Back.RED + 'WindTurbine(s) not found!!!')
-            continue
-        inventory.viewInventory()
-        item = int(input('Select # of Windturbine to be updated:\n '))
-        if item - 1 > len(inventory.turbines):
-            print('Wrong number provided')
-        else:
-            windturbine = Windturbine()
-            if windturbine.addTurbine() is True:
-                inventory.turbines.remove(inventory.turbines[item - 1])
-                inventory.turbines.insert(item - 1, windturbine)
-                print()
-                print('Great 😊, Windturbine was updated')
+#    elif userInput == '4':
+#        # Edit Windturbine recorded
+#        if len(inventory.turbines) < 1:
+#            print(Back.RED + 'WindTurbine(s) not found!!!')
+#            continue
+#        inventory.viewInventory()
+#        item = int(input('Select # of Windturbine to be updated:\n '))
+#        if item - 1 > len(inventory.turbines):
+#            print('Wrong number provided')
+#        else:
+#            windturbine = Windturbine()
+#            if windturbine.addTurbine() is True:
+#                inventory.turbines.remove(inventory.turbines[item - 1])
+#                inventory.turbines.insert(item - 1, windturbine)
+#                print()
+#                print('Great 😊, Windturbine was updated')
     elif userInput == '5':
         # Create a file txt to export it
         if len(inventory.turbines) < 1:

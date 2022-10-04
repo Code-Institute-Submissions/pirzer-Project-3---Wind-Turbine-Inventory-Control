@@ -1,2 +1,2 @@
 Agt	Mfg	Model	Ctry	Year	Power
-JOhn	GAESA	GA300	IRD	200	300
+John	KIA	KIA1	IRD	2004	2003
