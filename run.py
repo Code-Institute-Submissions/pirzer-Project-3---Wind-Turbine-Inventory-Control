@@ -1,8 +1,11 @@
 """ Light program version of WindTurbines Inventory """
 from datetime import datetime
+import re
 # import string
 import colorama
 from colorama import Fore, Back, Style
+
+num_format = re.compile(r'^\-?[1-9][0-9]*$')
 
 colorama.init(autoreset=True)
 
@@ -169,6 +172,9 @@ while True:
             continue
         inventory.viewInventory()
         item = int(input('Select # of Windturbine to be updated:\n '))
+        if item == 0:
+            print('No valid!!')
+            continue
         if item - 1 > len(inventory.turbines):
             print('Wrong number provided')
         else:
