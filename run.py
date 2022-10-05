@@ -17,7 +17,7 @@ class Bcolors:
 the_date = datetime.now().date()
 print(" ")
 print(f'{Bcolors.GRE}✇  Second Hand Windturbines. Inventory Tool ✇ ')
-print(f'{Bcolors.GRE} the_date ')
+print(the_date)
 print('=======================================================')
 
 
@@ -45,7 +45,7 @@ class Windturbine:
             return False
 
     def _is_valid_uname(self, _uname):
-        print("Validation")
+        print(Fore.GREEN + 'Validation')
 #        print(_uname)
         if not _uname.isalpha():
             print(f'{Bcolors.RED}No completed')
@@ -59,7 +59,7 @@ class Windturbine:
         return _uname
 
     def _is_valid_country(self, _country):
-        print("Validation")
+        print(Fore.GREEN + 'Validation')
 #        print(_country)
         if not _country.isalpha():
             print(f'{Bcolors.RED}No completed')
@@ -73,7 +73,7 @@ class Windturbine:
         return _country
 
     def _is_valid_year(self, _year):
-        print("Validation")
+        print(Fore.GREEN + 'Validation')
 #        print(type(_year))
         if not _year.isnumeric():
             print(f'{Bcolors.RED}No completed')
@@ -87,7 +87,7 @@ class Windturbine:
         return _year
 
     def _is_valid_npow(self, _npow):
-        print("Validation")
+        print(Fore.GREEN + 'Validation')
 #       print(type(_npow))
         if not _npow.isnumeric():
             print(f'{Bcolors.RED}No completed')
@@ -135,49 +135,49 @@ while True:
     print(' ✔ Add Windturbine to Inventory                     [1]')
     print(' ✔ Delete Windturnine from Inventory                [2]')
     print(' ✔ List all Windturbines                            [3]')
-    print(' ✔ Update Windturbine in Inventory                  [x]')
+    print(' ✔ Update Windturbine in Inventory                  [4]')
     print(' ✔ Export Current Inventory                         [5]')
     print(' ✔ Exit                                             [6]')
     print("=======================================================")
-    userInput = input(f'{Bcolors.GRE}Select 1-6:\n ')
+    userInput = input('Select 1-6:\n ')
     if userInput == "1":
         # Add a Windturbines
         inventory.addTurbine()
     elif userInput == '2':
         # Remove a Windturbine
         if len(inventory.turbines) < 1:
-            print(Back.RED + 'WindTurbine(s) not found!!!')
+            print(Fore.RED + 'WindTurbine(s) not found!!!')
             continue
         inventory.viewInventory()
         item = int(input('Enter # of Windturbine to be deleted:\n '))
         if item - 1 > len(inventory.turbines):
-            print('Wrong number provided')
+            print(Fore.RED + 'Wrong number provided')
         else:
             inventory.turbines.remove(inventory.turbines[item - 1])
             print()
-            print('Windturbine deleted')
+            print(Fore.RED + 'Windturbine deleted')
     elif userInput == '3':
         # list of the Windturbines recorded
         if len(inventory.turbines) < 1:
             print(Back.RED + 'WindTurbine(s) not found!!!')
             continue
         inventory.viewInventory()
-#    elif userInput == '4':
-#        # Edit Windturbine recorded
-#        if len(inventory.turbines) < 1:
-#            print(Back.RED + 'WindTurbine(s) not found!!!')
-#            continue
-#        inventory.viewInventory()
-#        item = int(input('Select # of Windturbine to be updated:\n '))
-#        if item - 1 > len(inventory.turbines):
-#            print('Wrong number provided')
-#        else:
-#            windturbine = Windturbine()
-#            if windturbine.addTurbine() is True:
-#                inventory.turbines.remove(inventory.turbines[item - 1])
-#                inventory.turbines.insert(item - 1, windturbine)
-#                print()
-#                print('Great 😊, Windturbine was updated')
+    elif userInput == '4':
+        # Edit Windturbine recorded
+        if len(inventory.turbines) < 1:
+            print(Back.RED + 'WindTurbine(s) not found!!!')
+            continue
+        inventory.viewInventory()
+        item = int(input('Select # of Windturbine to be updated:\n '))
+        if item - 1 > len(inventory.turbines):
+            print('Wrong number provided')
+        else:
+            windturbine = Windturbine()
+            if windturbine.addTurbine() is True:
+                inventory.turbines.remove(inventory.turbines[item - 1])
+                inventory.turbines.insert(item - 1, windturbine)
+                print()
+                print('Great 😊, Windturbine was updated')
     elif userInput == '5':
         # Create a file txt to export it
         if len(inventory.turbines) < 1:
@@ -189,12 +189,12 @@ while True:
         for turbile in inventory.turbines:
             f.write('%s\n' % turbile)
         f.close()
-        print('Cool!! 😎 info exported to the file')
+        print(Fore.CYAN + 'Cool!! 😎 info exported to the file')
     elif userInput == '6':
         # exit the loop
-        print('talk soon to you 😉')
+        print(Fore.BLUE + 'talk soon to you 😉')
         break
     else:
         # Wrong user input
-        print('Invalid Input. Please try again')
+        print(Fore.RED + 'Invalid Input. Please try again')
 # This is a new line that ends the file
