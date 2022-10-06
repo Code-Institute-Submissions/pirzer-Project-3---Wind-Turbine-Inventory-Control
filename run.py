@@ -171,19 +171,23 @@ while True:
             print(Back.RED + 'WindTurbine(s) not found!!!')
             continue
         inventory.viewInventory()
-        item = int(input('Select # of Windturbine to be updated:\n '))
-        if item == 0:
-            print('No valid!!')
+        item = input(Fore.GREEN + 'Select # of Windturbine to be updated:\n ')
+        if not str(item).isdigit():
+            print(Fore.RED + 'Wrong input provided')
             continue
+        if str(item) == 0:
+            print('mal')
+            continue
+        item = int(item)
         if item - 1 > len(inventory.turbines):
-            print('Wrong number provided')
+            print(Fore.RED + 'Wrong number provided')
         else:
             windturbine = Windturbine()
             if windturbine.addTurbine() is True:
                 inventory.turbines.remove(inventory.turbines[item - 1])
                 inventory.turbines.insert(item - 1, windturbine)
                 print()
-                print('Great 😊, Windturbine was updated')
+                print(Back.CYAN + 'Fore.Great 😊, Windturbine was updated')
     elif userInput == '5':
         # Create a file txt to export it
         if len(inventory.turbines) < 1:
