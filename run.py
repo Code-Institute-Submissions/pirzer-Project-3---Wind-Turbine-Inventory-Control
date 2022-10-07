@@ -1,11 +1,10 @@
 """ Light program version of WindTurbines Inventory """
 from datetime import datetime
-import re
 # import string
 import colorama
 from colorama import Fore, Back, Style
 
-num_format = re.compile(r'^\-?[0]*$')
+# num_format = re.compile(r'^\-?[0]*$')
 
 colorama.init(autoreset=True)
 
