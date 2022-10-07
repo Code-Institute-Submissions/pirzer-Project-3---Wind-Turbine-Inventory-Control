@@ -178,9 +178,6 @@ while True:
         if int(item) < 1:
             print(Fore.RED + 'Wrong input provided')
             continue
-        if int(item) < int(item)+1:
-            print(Fore.RED + 'Wrong input provided')
-            continue
         # item = int(item)
         if int(item) - 1 > len(inventory.turbines):
             print(Fore.YELLOW + 'Wrong number provided')
