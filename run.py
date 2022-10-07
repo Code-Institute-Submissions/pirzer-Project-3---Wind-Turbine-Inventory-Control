@@ -152,8 +152,11 @@ while True:
             print(Fore.RED + 'WindTurbine(s) not found!!!')
             continue
         inventory.viewInventory()
-        item = int(input('Enter # of Windturbine to be deleted:\n '))
-        if item - 1 > len(inventory.turbines):
+        item = input('Enter # of Windturbine to be deleted:\n ')
+        if not str(item).isdigit():
+            print(Fore.RED + 'Wrong number provided')
+            continue
+        if item > len(inventory.turbines):
             print(Fore.RED + 'Wrong number provided')
         else:
             inventory.turbines.remove(inventory.turbines[item - 1])
