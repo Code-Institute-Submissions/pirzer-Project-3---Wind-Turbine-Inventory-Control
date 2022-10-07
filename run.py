@@ -156,6 +156,10 @@ while True:
         if not str(item).isdigit():
             print(Fore.RED + 'Wrong number provided')
             continue
+        if int(item) < 1:
+            print(Fore.RED + 'Wrong number provided')
+            continue
+        item = int(item)
         if item > len(inventory.turbines):
             print(Fore.RED + 'Wrong number provided')
         else:
