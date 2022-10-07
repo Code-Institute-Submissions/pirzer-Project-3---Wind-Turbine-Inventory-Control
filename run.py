@@ -5,7 +5,7 @@ import re
 import colorama
 from colorama import Fore, Back, Style
 
-num_format = re.compile(r'^\-?[1-9][0-9]*$')
+num_format = re.compile(r'^\-?[0]*$')
 
 colorama.init(autoreset=True)
 
@@ -175,19 +175,24 @@ while True:
         if not str(item).isdigit():
             print(Fore.RED + 'Wrong input provided')
             continue
-        if str(item) == 0:
-            print('mal')
+        if int(item) < 1:
+            print(Fore.RED + 'Wrong input provided')
             continue
-        item = int(item)
-        if item - 1 > len(inventory.turbines):
-            print(Fore.RED + 'Wrong number provided')
+        if int(item) < int(item)+1:
+            print(Fore.RED + 'Wrong input provided')
+            continue
+        # item = int(item)
+        if int(item) - 1 > len(inventory.turbines):
+            print(Fore.YELLOW + 'Wrong number provided')
         else:
             windturbine = Windturbine()
             if windturbine.addTurbine() is True:
-                inventory.turbines.remove(inventory.turbines[item - 1])
-                inventory.turbines.insert(item - 1, windturbine)
+                inventory.turbines.remove(inventory.turbines[int(item) - 1])
+                inventory.turbines.insert(int(item) - 1, windturbine)
                 print()
                 print(Back.CYAN + 'Fore.Great 😊, Windturbine was updated')
+                print(Back.GREEN + 'Validation')
+                # print(type(item))
     elif userInput == '5':
         # Create a file txt to export it
         if len(inventory.turbines) < 1:
@@ -200,7 +205,7 @@ while True:
             f.write('%s\n' % turbile)
         f.close()
         print(Fore.CYAN + 'Cool!! 😎 info exported to the file')
-    elif userInput == '6':
+    elif userInput == 'exit':
         # exit the loop
         print(Fore.BLUE + 'talk soon to you 😉')
         break
