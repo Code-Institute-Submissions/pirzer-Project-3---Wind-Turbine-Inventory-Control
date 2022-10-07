@@ -180,7 +180,7 @@ while True:
             continue
         item = int(item)
         if item > len(inventory.turbines):
-            print(Fore.YELLOW + 'Wrong number provided')
+            print(Fore.RED + 'Wrong number provided')
         else:
             windturbine = Windturbine()
             if windturbine.addTurbine() is True:
