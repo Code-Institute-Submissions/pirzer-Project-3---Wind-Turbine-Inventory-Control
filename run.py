@@ -52,7 +52,7 @@ class Windturbine:
 #        print(_uname)
         if not _uname.isalpha():
             print(f'{Bcolors.RED}No completed')
-#            print(type(_uname))
+            print(type(_uname))
             raise ValueError(
                 f"""
                 {Fore.YELLOW}Please use only characters (a-z){Fore.RESET}
@@ -66,7 +66,7 @@ class Windturbine:
 #        print(_country)
         if not _country.isalpha():
             print(f'{Bcolors.RED}No completed')
-#            print(type(_country))
+            print(type(_country))
             raise ValueError(
                 f"""
                 {Fore.YELLOW}Please use only characters (a-z){Fore.RESET}
@@ -80,7 +80,7 @@ class Windturbine:
 #        print(type(_year))
         if not _year.isnumeric():
             print(f'{Bcolors.RED}No completed')
-#            print(type(_year))
+            print(type(_year))
             raise ValueError(
                 f"""
                 {Fore.YELLOW}Please use only numbers (0-9){Fore.RESET}
@@ -94,7 +94,7 @@ class Windturbine:
 #       print(type(_npow))
         if not _npow.isnumeric():
             print(f'{Bcolors.RED}No completed')
-#           print(type(_npow))
+            print(type(_npow))
             raise ValueError(
                 f"""
                 {Fore.YELLOW}Please use only numbers (0-9){Fore.RESET}
@@ -125,7 +125,7 @@ class Inventory:
     def viewInventory(self):
         print('====================================================')
         print('\t'.join(['', 'Agt', 'Mfg', 'Model', 'Ctry', 'Year', 'Power']))
-        print('====================================================')
+        print('=======================================================')
         for idx, turbine in enumerate(self.turbines):
             print(idx + 1, end='\t')
             print(turbine)
@@ -155,17 +155,20 @@ while True:
         item = input('Enter # of Windturbine to be deleted:\n ')
         if not str(item).isdigit():
             print(Fore.RED + 'Wrong number provided')
+            print(type(item))
             continue
         if int(item) < 1:
             print(Fore.RED + 'Wrong number provided')
+            print(type(item))
             continue
         item = int(item)
         if item > len(inventory.turbines):
             print(Fore.RED + 'Wrong number provided')
+            print(type(item))
         else:
             inventory.turbines.remove(inventory.turbines[item - 1])
             print()
-            print(Fore.RED + 'Windturbine deleted')
+            print(Fore.YELLOW + 'Windturbine deleted')
     elif userInput == '3':
         # list of the Windturbines recorded
         if len(inventory.turbines) < 1:
@@ -176,18 +179,21 @@ while True:
         # Edit Windturbine recorded
         if len(inventory.turbines) < 1:
             print(Back.RED + 'WindTurbine(s) not found!!!')
+            # print(type(userInput))
             continue
         inventory.viewInventory()
         item = input(Fore.GREEN + 'Select # of Windturbine to be updated:\n ')
         if not str(item).isdigit():
             print(Fore.RED + 'Wrong input provided')
+            print(type(item))
             continue
         if int(item) < 1:
-            print(Fore.RED + 'Wrong input provided q')
+            print(Fore.RED + 'Wrong input provided')
             continue
         item = int(item)
         if item > len(inventory.turbines):
             print(Fore.RED + 'Wrong number provided')
+            print(type(item))
         else:
             windturbine = Windturbine()
             if windturbine.addTurbine() is True:
@@ -201,6 +207,7 @@ while True:
         # Create a file txt to export it
         if len(inventory.turbines) < 1:
             print(Back.RED + 'WindTurbine(s) not found!!!')
+            print(type(userInput))
             continue
         f = open('windturbine_inventory.txt', 'w', encoding='utf-8')
         f.write('\t'.join(['Agt', 'Mfg', 'Model', 'Ctry', 'Year', 'Power']))
@@ -216,4 +223,5 @@ while True:
     else:
         # Wrong user input
         print(Fore.RED + 'Invalid Input. Please try again')
+        print(type(userInput))
 # This is a new line that ends the file

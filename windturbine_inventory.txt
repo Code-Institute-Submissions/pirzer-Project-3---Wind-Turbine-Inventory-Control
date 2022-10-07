@@ -1,2 +1,3 @@
 Agt	Mfg	Model	Ctry	Year	Power
-klnlknkl	ihh;n;	nnk	ird	8999	899
+Juan	POOL	P1	SPN	2000	400
+Carlos	FESDTO	FRES1	VZA	2000	4000
