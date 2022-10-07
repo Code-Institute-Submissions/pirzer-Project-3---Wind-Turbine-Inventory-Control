@@ -176,19 +176,19 @@ while True:
             print(Fore.RED + 'Wrong input provided')
             continue
         if int(item) < 1:
-            print(Fore.RED + 'Wrong input provided')
+            print(Fore.RED + 'Wrong input provided q')
             continue
-        # item = int(item)
-        if int(item) - 1 > len(inventory.turbines):
+        item = int(item)
+        if item > len(inventory.turbines):
             print(Fore.YELLOW + 'Wrong number provided')
         else:
             windturbine = Windturbine()
             if windturbine.addTurbine() is True:
-                inventory.turbines.remove(inventory.turbines[int(item) - 1])
-                inventory.turbines.insert(int(item) - 1, windturbine)
+                inventory.turbines.remove(inventory.turbines[item - 1])
+                inventory.turbines.insert(item - 1, windturbine)
                 print()
-                print(Back.CYAN + 'Fore.Great 😊, Windturbine was updated')
-                print(Back.GREEN + 'Validation')
+                print(Fore.CYAN + 'Great 😊, Windturbine was updated')
+                print(Fore.GREEN + 'Validation')
                 # print(type(item))
     elif userInput == '5':
         # Create a file txt to export it
@@ -202,7 +202,7 @@ while True:
             f.write('%s\n' % turbile)
         f.close()
         print(Fore.CYAN + 'Cool!! 😎 info exported to the file')
-    elif userInput == 'exit':
+    elif userInput == '6':
         # exit the loop
         print(Fore.BLUE + 'talk soon to you 😉')
         break
