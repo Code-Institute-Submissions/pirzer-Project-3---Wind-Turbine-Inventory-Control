@@ -247,6 +247,11 @@ while True:
         f.close()
         print(Fore.CYAN + 'Cool!! 😎 TXT report completed')
     elif userInput == '6':
+        # Create a file PDF to export it
+        if len(inventory.turbines) < 1:
+            print(Back.RED + 'WindTurbine(s) not found!!!')
+            print(type(userInput))
+            continue
         input_filename = 'windturbine_inventory.txt'
         output_filename = 'output.pdf'
         file = open(input_filename)
