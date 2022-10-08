@@ -152,9 +152,9 @@ class Inventory:
             print('Fantastic!!! 😎, The Windturbine was added ✇')
 
     def viewInventory(self):
-        print('====================================================')
+        print('========================================================')
         print('\t'.join(['', 'Agt', 'Mfg', 'Model', 'Ctry', 'Year', 'Power']))
-        print('=======================================================')
+        print('=======================================================A')
         for idx, turbine in enumerate(self.turbines):
             print(idx + 1, end='\t')
             print(turbine)
