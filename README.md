@@ -124,6 +124,10 @@ The coding includes class level(s) to create different instances depending on us
 - #### Browser Testing, see results below:
 ![./images/Main_Menu.JPG](./images/validation/coding%20performance.JPG)<center>image 22</center>
 
+- #### Testing User Stories (Functionality), see results below:
+![./images/Main_Menu.JPG](./images/validation/testing%20stories.JPG)<center>image 22</center>
+
+
 
 The template provided by Code Institute as provided to all students is assumed to be tested for the above.
 
