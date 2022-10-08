@@ -88,16 +88,16 @@ The current version offers to the user(s) the following options: ADD items, LIST
 ![./images/Main_Menu.JPG](./images/windturbine%20updated.JPG)
 <center>image 6</center>
 
-  - #### Export option 5 & 6: TXT & PDF Files produced. See image 7 below.
-![./images/Main_Menu.JPG](./images/txt%20pdf%20files%20exported.JPG)<center>image 7</center>
+  - #### Export option 7 & 8: TXT & PDF Files produced. See image 7 below.
+![./images/Main_Menu.JPG](./images/txt%20pdf%20files%20exported.JPG)<center>image 7 & 8</center>
 
 
-  - #### EXIT option - 7 -: Leave the tool. See image 8 below.
-![./images/Main_Menu.JPG](./images/exit%20option.JPG)<center>image 8</center>
+  - #### EXIT option - 7 -: Leave the tool. See image 9 below.
+![./images/Main_Menu.JPG](./images/exit%20option.JPG)<center>image 9</center>
 
 ### Flowchart
 See the map out below:
-  ![./images/Main_Menu.JPG](./images/validation/flowchart.JPG)
+  ![./images/Main_Menu.JPG](./images/validation/flowchart.JPG)<center>image 10</center>
 
 ### Data Model
 
@@ -115,55 +115,55 @@ If and try/except statements were implemented all over the coding to handle erro
   ##### d. The fields of Manufacturer & Model are free of character restrictions due to their input nature. Other input fields have been validated.
 
 - #### Validator Testing
-The coding includes class level(s) to create different instances depending on user choice and navigation. See images (9-20) of testing completed below.
+The coding includes class level(s) to create different instances depending on user choice and navigation. See images (11-22) of testing completed below.
 
   - #### Main Menu: Wrong input. Result: Issue detected.
-![./images/Main_Menu.JPG](./images/validation/validation%201%20main%20menu.JPG)<center>image 9</center>
+![./images/Main_Menu.JPG](./images/validation/validation%201%20main%20menu.JPG)<center>image 11</center>
 
   - #### Main Menu: Wrong input.Result: Issue detected.
-![./images/Main_Menu.JPG](./images/validation/validation%202%20main%20menu.JPG)<center>image 10</center>
+![./images/Main_Menu.JPG](./images/validation/validation%202%20main%20menu.JPG)<center>image 12</center>
 
   - #### Main Menu: Wrong input. Result: Issue detected.
-![./images/Main_Menu.JPG](./images/validation/validation%203%20main%20menu.JPG)<center>image 11</center>
+![./images/Main_Menu.JPG](./images/validation/validation%203%20main%20menu.JPG)<center>image 13</center>
 
   - #### Main Menu: Wrong input. Result: Issue detected.
-![./images/Main_Menu.JPG](./images/validation/validation%204%20main%20menu.JPG)<center>image 12</center>
+![./images/Main_Menu.JPG](./images/validation/validation%204%20main%20menu.JPG)<center>image 14</center>
 
   - #### Main Menu: Wrong input. Result: Issue detected.
-![./images/Main_Menu.JPG](./images/validation/validation%205%20main%20menu.JPG)<center>image 13</center>
+![./images/Main_Menu.JPG](./images/validation/validation%205%20main%20menu.JPG)<center>image 15</center>
 
   - #### Main Menu: Wrong input. Result: Issue detected.
-![./images/Main_Menu.JPG](./images/validation/validation%206%20main%20year.JPG)<center>image 14</center>
+![./images/Main_Menu.JPG](./images/validation/validation%206%20main%20year.JPG)<center>image 16</center>
 
   - #### Add: Wrong input. Result: Issue detected.
-![./images/Main_Menu.JPG](./images/validation/validation%201%20add.JPG)<center>image 15</center>
+![./images/Main_Menu.JPG](./images/validation/validation%201%20add.JPG)<center>image 17</center>
 
   - #### Add: Wrong input. Result: Issue detected.
-![./images/Main_Menu.JPG](./images/validation/validation%201%20add%20country.JPG)<center>image 16</center>
+![./images/Main_Menu.JPG](./images/validation/validation%201%20add%20country.JPG)<center>image 18</center>
 
   - #### Add: Wrong input. Result: Issue detected.
-![./images/Main_Menu.JPG](./images/validation/validation%201%20add%20power.JPG)<center>image 17</center>
+![./images/Main_Menu.JPG](./images/validation/validation%201%20add%20power.JPG)<center>image 19</center>
 
   - #### Delete: Wrong input and correct input. Result: Issue detected.
-![./images/Main_Menu.JPG](./images/validation/validation_1_delete.JPG)<center>image 18</center>
+![./images/Main_Menu.JPG](./images/validation/validation_1_delete.JPG)<center>image 20</center>
 
   - #### List: Wrong input and correct input. Result: Issue detected.
-![./images/Main_Menu.JPG](./images/validation/validation%20lis%20turbines.JPG)<center>image 19</center>
+![./images/Main_Menu.JPG](./images/validation/validation%20lis%20turbines.JPG)<center>image 21</center>
 
   - #### List: Wrong input and correct input. Result: Issue detected.
-![./images/Main_Menu.JPG](./images/validation/validation%20update%20item.JPG)<center>image 20</center>
+![./images/Main_Menu.JPG](./images/validation/validation%20update%20item.JPG)<center>image 22</center>
 
  - #### Accessibility & Performance. Result: Issue detected. Please, see results below:
 
-![./images/Main_Menu.JPG](./images/validation/accessability%20and%20perforance%20test.JPG)<center>image 21</center>
+![./images/Main_Menu.JPG](./images/validation/accessability%20and%20perforance%20test.JPG)<center>image 23</center>
 
 - #### Browser Testing. 
 Result: Issue detected.Please, see results below:
-![./images/Main_Menu.JPG](./images/validation/coding%20performance.JPG)<center>image 22</center>
+![./images/Main_Menu.JPG](./images/validation/coding%20performance.JPG)<center>image 24</center>
 
 - #### Testing User Stories (Functionality). 
 Result: request completed. Please, see results below:
-![./images/Main_Menu.JPG](./images/validation/testing%20stories%201.JPG )<center>image 22</center>
+![./images/Main_Menu.JPG](./images/validation/testing%20stories%201.JPG )<center>image 25</center>
 
 
 The template provided by Code Institute as provided to all students is assumed to be tested for the above.
@@ -179,7 +179,7 @@ There have been fixed over 100 errors, and the main bugs found are as follow:
 - #### Update and Delete option could not differenciate when the user enters 0, 1, and 2: This Bug displayed different error message such as ValueError: invalid literal for int() with base 10, IndexError: list out of range, Traceback (most recent call last). See solution in image 23 below.
 
 - #### Bug solution:
-![./images/Main_Menu.JPG](./images/validation/Bug%20solution%20update%20and%20delete%20option.JPG)<center>image 23</center>
+![./images/Main_Menu.JPG](./images/validation/Bug%20solution%20update%20and%20delete%20option.JPG)<center>image 26</center>
 
 - #### Deployment was not proforming correctly: It was not added the colorama framework to requirement.txt file causing issues. Thanks to Slack feedback I could solved this issue. 
 
