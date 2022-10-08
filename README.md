@@ -1,5 +1,5 @@
 # <font color="Green">Wind Turbines 2nd✋ - Inventory tool</font>  
-The following project consists of a **quick tool for tracking wind turbines in inventory** for small business enterprises. This case recreated a fictiony company orientated to repowering wind turnines.  
+The following project consists of a **quick tool for tracking wind turbines in inventory** for small business enterprises. This case creates a fictional company oriented toward repowering wind turbines. 
 [Link to live site](https://windturbines-project3.herokuapp.com/)
 ![Responsive mock-up](./images/presentation.JPG)
 
