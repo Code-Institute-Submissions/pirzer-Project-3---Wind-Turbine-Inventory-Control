@@ -1,9 +1,8 @@
 # <font color="Green">Wind Turbines 2nd✋ - Inventory tool</font>  
-The following project consists of a **quick tool for tracking wind turbines in inventory** for small business enterprises. The current code is set up with **Python 3.8 version**. The present case is applied to a fictiony company aimed at repowering wind turbines, ie,  2nd hand wind turbines. 
+The following project consists of a **quick tool for tracking wind turbines in inventory** for small business enterprises. This case recreated a fictiony company orientated to repowering wind turnines.  
 
 ### Objectives
-* Develop a friendly checking inventory tool for 2nd hand wind turbines to be used by warehouse staff.
-*Produce a txt file to show the wind turbines in inventory.
+* Develop a friendly checking inventory tool to control wind turbine in the warehouse. The information can be printed out in TXT and PDF files. 
 
 ### User Stories - UX
 
@@ -24,20 +23,18 @@ The following project consists of a **quick tool for tracking wind turbines in i
 - ### Straight forward option to exit.
 
 ### Design
-Once upon a time, Vincent Van Gogh said: **"How wonderful yellow is. It stands for the sun."** In our era, Color psychology suggests that the yellow colour owns positive characteristics such as attention-grabbing, energetic, and helpful for reading at last. Therefore, the colour of the characters for the user is **yellow** to compensate for interface limitations. 
+The present software version is a raw tool, i.e., no images. However, it has been included some **symbol emoji** and colours also. The colors used are as follow: **Green, Blue, Cyan, Yellow, and Red**.
 
-The software is a raw tool without images, however, the design includes **symbol emoji** at the beginning and at the end of this tool.
-
-Additionally, the software notifies the user when a wind turbine is added, removed, updated, and exported. Likewise, an exit message is included also.
+The current version offers to the user the following options: ADD, LIST, REMOVE, UPDATE, PRINT REPORT IN TXT & PDF files.
 
   ### Structure
   This support tool is built up as follows:
-  - #### Main Menu: ADD, DELETE, LIST,  UDPATE, EXPORT, & EXIT options. See image 1 below.
+  - #### Main Menu: ADD, DELETE, LIST,  UDPATE, EXPORT FILES  [PDF & TXT], & EXIT options. See image 1 below.
 
 ![./images/Main_Menu.JPG](./images/Main_Menu.JPG)
 <center>image 1</center>
 
-  - #### ADD option: Agent Name, Manufacturer, Model, Country location, year made, Nominal Power [kW]. See image 2 below.
+  - #### ADD option: Agent Name, Manufacturer, Model, Country, Year, Nominal Power [kW]. See image 2 below.
 ![./images/Main_Menu.JPG](./images/adding%20wind%20turbine.JPG)
 <center>image 2</center>
 

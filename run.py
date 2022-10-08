@@ -265,6 +265,6 @@ while True:
         break
     else:
         # Wrong user input
-        print(Fore.RED + 'Invalid Input. Please try again')
+        print(Back.RED + 'Wrong option provided. Please try again')
         print(type(userInput))
 # This is a new line that ends the file
