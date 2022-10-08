@@ -1,3 +1,2 @@
 Agt	Mfg	Model	Ctry	Year	Power
-Juan	POOL	P1	SPN	2000	400
-Carlos	FESDTO	FRES1	VZA	2000	4000
+Pedro	Rojas	RR	IRD	2003	400

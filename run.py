@@ -3,6 +3,9 @@ from datetime import datetime
 # import string
 import colorama
 from colorama import Fore, Back, Style
+import textwrap
+from fpdf import FPDF
+
 
 # num_format = re.compile(r'^\-?[0]*$')
 
@@ -109,6 +112,33 @@ class Windturbine:
         ])
 
 
+def text_to_pdf(text, filename):
+    a4_width_mm = 210
+    pt_to_mm = 0.35
+    fontsize_pt = 10
+    fontsize_mm = fontsize_pt * pt_to_mm
+    margin_bottom_mm = 10
+    character_width_mm = 7 * pt_to_mm
+    width_text = a4_width_mm / character_width_mm
+
+    pdf = FPDF(orientation='P', unit='mm', format='A4')
+    pdf.set_auto_page_break(True, margin=margin_bottom_mm)
+    pdf.add_page()
+    pdf.set_font(family='Courier', size=fontsize_pt)
+    splitted = text.split('\n')
+
+    for line in splitted:
+        lines = textwrap.wrap(line, width_text)
+
+        if len(lines) == 0:
+            pdf.ln()
+
+        for wrap in lines:
+            pdf.cell(0, fontsize_mm, wrap, ln=1)
+
+    pdf.output(filename, 'F')
+
+
 class Inventory:
     """Class representing Windturbine to be added"""
     def __init__(self):
@@ -138,8 +168,9 @@ while True:
     print(' ✔ Delete Windturnine from Inventory                [2]')
     print(' ✔ List all Windturbines                            [3]')
     print(' ✔ Update Windturbine in Inventory                  [4]')
-    print(' ✔ Export Current Inventory                         [5]')
-    print(' ✔ Exit                                             [6]')
+    print(' ✔ Export Current Inventory report TXT              [5]')
+    print(' ✔ Export Current Inventory report PDF              [6]')
+    print(' ✔ Exit                                             [7]')
     print("=======================================================")
     userInput = input('Select 1-6:\n ')
     if userInput == "1":
@@ -214,8 +245,16 @@ while True:
         for turbile in inventory.turbines:
             f.write('%s\n' % turbile)
         f.close()
-        print(Fore.CYAN + 'Cool!! 😎 info exported to the file')
+        print(Fore.CYAN + 'Cool!! 😎 TXT report completed')
     elif userInput == '6':
+        input_filename = 'windturbine_inventory.txt'
+        output_filename = 'output.pdf'
+        file = open(input_filename)
+        text = file.read()
+        file.close()
+        text_to_pdf(text, output_filename)
+        print(Fore.CYAN + 'Cool!! 😎 PDF report completed')
+    elif userInput == '7':
         # exit the loop
         print(Fore.BLUE + 'talk soon to you 😉')
         break
