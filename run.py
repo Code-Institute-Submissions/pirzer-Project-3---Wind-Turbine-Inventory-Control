@@ -154,7 +154,7 @@ class Inventory:
     def viewInventory(self):
         print('========================================================')
         print('\t'.join(['', 'Agt', 'Mfg', 'Model', 'Ctry', 'Year', 'Power']))
-        print('=======================================================A')
+        print('========================================================')
         for idx, turbine in enumerate(self.turbines):
             print(idx + 1, end='\t')
             print(turbine)
