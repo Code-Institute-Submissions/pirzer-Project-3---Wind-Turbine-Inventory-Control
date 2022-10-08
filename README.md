@@ -91,50 +91,50 @@ If and try/except statements were implemented all over the coding to handle erro
 - #### Validator Testing
 The coding includes class level(s) to create different instances depending on user choice and navigation. See images (9-20) of testing completed below.
 
-  - #### Main Menu: Wrong input.
+  - #### Main Menu: Wrong input. Result: Issue detected.
 ![./images/Main_Menu.JPG](./images/validation/validation%201%20main%20menu.JPG)<center>image 9</center>
 
-  - #### Main Menu: Wrong input.
+  - #### Main Menu: Wrong input.Result: Issue detected.
 ![./images/Main_Menu.JPG](./images/validation/validation%202%20main%20menu.JPG)<center>image 10</center>
 
-  - #### Main Menu: Wrong input.
+  - #### Main Menu: Wrong input. Result: Issue detected.
 ![./images/Main_Menu.JPG](./images/validation/validation%203%20main%20menu.JPG)<center>image 11</center>
 
-  - #### Main Menu: Wrong input.
+  - #### Main Menu: Wrong input. Result: Issue detected.
 ![./images/Main_Menu.JPG](./images/validation/validation%204%20main%20menu.JPG)<center>image 12</center>
 
-  - #### Main Menu: Wrong input.
+  - #### Main Menu: Wrong input. Result: Issue detected.
 ![./images/Main_Menu.JPG](./images/validation/validation%205%20main%20menu.JPG)<center>image 13</center>
 
-  - #### Main Menu: Wrong input.
+  - #### Main Menu: Wrong input. Result: Issue detected.
 ![./images/Main_Menu.JPG](./images/validation/validation%206%20main%20year.JPG)<center>image 14</center>
 
-  - #### Add: Wrong input.
+  - #### Add: Wrong input. Result: Issue detected.
 ![./images/Main_Menu.JPG](./images/validation/validation%201%20add.JPG)<center>image 15</center>
 
-  - #### Add: Wrong input.
+  - #### Add: Wrong input. Result: Issue detected.
 ![./images/Main_Menu.JPG](./images/validation/validation%201%20add%20country.JPG)<center>image 16</center>
 
-  - #### Add: Wrong input.
+  - #### Add: Wrong input. Result: Issue detected.
 ![./images/Main_Menu.JPG](./images/validation/validation%201%20add%20power.JPG)<center>image 17</center>
 
-  - #### Delete: Wrong input and correct input.
+  - #### Delete: Wrong input and correct input. Result: Issue detected.
 ![./images/Main_Menu.JPG](./images/validation/validation_1_delete.JPG)<center>image 18</center>
 
-  - #### List: Wrong input and correct input.
+  - #### List: Wrong input and correct input. Result: Issue detected.
 ![./images/Main_Menu.JPG](./images/validation/validation%20lis%20turbines.JPG)<center>image 19</center>
 
-  - #### List: Wrong input and correct input.
+  - #### List: Wrong input and correct input. Result: Issue detected.
 ![./images/Main_Menu.JPG](./images/validation/validation%20update%20item.JPG)<center>image 20</center>
 
- - #### Accessibility & Performance, see results below:
+ - #### Accessibility & Performance. Result: Issue detected. Please, see results below:
 
 ![./images/Main_Menu.JPG](./images/validation/accessability%20and%20perforance%20test.JPG)<center>image 21</center>
 
-- #### Browser Testing, see results below:
+- #### Browser Testing. Result: Issue detected.Please, see results below:
 ![./images/Main_Menu.JPG](./images/validation/coding%20performance.JPG)<center>image 22</center>
 
-- #### Testing User Stories (Functionality), see results below:
+- #### Testing User Stories (Functionality). Result: request completed. Please, see results below:
 ![./images/Main_Menu.JPG](./images/validation/testing%20stories%201.JPG )<center>image 22</center>
 
 
@@ -172,8 +172,6 @@ The platform used for the project's implementation is Heroku. The steps to deplo
 #### Potential Future Improvements
 - ##### Enhance the code structure, cleaning it up reviewing and defining a function for each task expected. This will help to add more complicated code lines to maintain a clean and really useful way structural-wise.  
 - ##### Add more validation against user's errors such as limiting the length of digits, defining a clear format for the year field [range time], filtering out the mixing of characters & letters per field, adding regular expressions control for the current and future fields, and adding email fields and its validation also. Eventually, report options can be tied with the submission of & text files via email, and improve the interface with the user(s) to make it more friendly, among others.
-
-
 
 #### Credits
 
