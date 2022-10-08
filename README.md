@@ -117,6 +117,21 @@ The coding includes class level(s) to create different instances depending on us
   - #### List: Wrong input and correct input.
 ![./images/Main_Menu.JPG](./images/validation/validation%20update%20item.JPG)<center>image 20</center>
 
+ - #### Accessibility & Performance, see results below:
+
+![./images/Main_Menu.JPG](./images/validation/accessability%20and%20perforance%20test.JPG)<center>image 21</center>
+
+- #### Browser Testing, see results below:
+![./images/Main_Menu.JPG](./images/validation/coding%20performance.JPG)<center>image 22</center>
+
+
+The template provided by Code Institute as provided to all students is assumed to be tested for the above.
+
+Using the file template [code institute], no ajor errors remain in current coding version. As a relevant comment, there have been fixed over 100 errors. 
+
+
+
+
 
 
 
