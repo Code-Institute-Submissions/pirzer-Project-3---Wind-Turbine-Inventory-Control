@@ -169,6 +169,12 @@ The platform used for the project's implementation is Heroku. The steps to deplo
 - ##### Select if or not to enable Automatic Deploys. If enabled, the deployed app will update automatically with each push to GitHub.
 - ##### Click Deploy
 
+#### Potential Future Improvements
+- ##### Enhance the code structure, cleaning it up reviewing and defining a function for each task expected. This will help to add more complicated code lines to maintain a clean and really useful way structural-wise.  
+- ##### Add more validation against user's errors such as limiting the length of digits, defining a clear format for the year field [range time], filtering out the mixing of characters & letters per field, adding regular expressions control for the current and future fields, and adding email fields and its validation also. Eventually, report options can be tied with the submission of & text files via email, and improve the interface with the user(s) to make it more friendly, among others.
+
+
+
 #### Credits
 
 - ###### Emoticon: https://www.alt-codes.net/smiley_alt_codes.php
