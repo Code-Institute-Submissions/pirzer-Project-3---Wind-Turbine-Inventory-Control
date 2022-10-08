@@ -34,7 +34,7 @@ The following project consists of a **quick tool for tracking wind turbines in i
 
 
 ### Objective
-* Develop a friendly checking inventory tool to control wind turbine in the warehouse. The information can be printed out in TXT and PDF files. 
+* Develop a friendly checking inventory tool to track wind turbine(s) units in the warehouse. 
 
 ### Feature Planning - Snapshot.
 
