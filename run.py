@@ -212,7 +212,7 @@ while True:
             # print(type(userInput))
             continue
         inventory.viewInventory()
-        item = input(Fore.GREEN + 'Select # of Windturbine to be updated:\n ')
+        item = input('Select # of Windturbine to be updated:\n ')
         if not str(item).isdigit():
             print(Fore.RED + 'Wrong input provided')
             print(type(item))
