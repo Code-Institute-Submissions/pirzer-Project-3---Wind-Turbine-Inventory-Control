@@ -1,5 +1,7 @@
 # <font color="Green">Wind Turbines 2nd✋ - Inventory tool</font>  
 The following project consists of a **quick tool for tracking wind turbines in inventory** for small business enterprises. This case recreated a fictiony company orientated to repowering wind turnines.  
+[Link to live site](https://windturbines-project3.herokuapp.com/)
+![Responsive mock-up](./images/presentation.JPG)
 
 ### Objectives
 * Develop a friendly checking inventory tool to control wind turbine in the warehouse. The information can be printed out in TXT and PDF files. 
@@ -63,6 +65,14 @@ The current version offers to the user(s) the following options: ADD items, LIST
   - #### EXIT option - 7 -: Leave the tool. See image 8 below.
 ![./images/Main_Menu.JPG](./images/exit%20option.JPG)<center>image 8</center>
 
+### Flowchart
+See the map out below:
+  ![./images/Main_Menu.JPG](./images/validation/flowchart.JPG)
+
+
+
+
+
 ### Data Model
 
 - #### OOP & class use
@@ -125,51 +135,45 @@ The coding includes class level(s) to create different instances depending on us
 ![./images/Main_Menu.JPG](./images/validation/coding%20performance.JPG)<center>image 22</center>
 
 - #### Testing User Stories (Functionality), see results below:
-![./images/Main_Menu.JPG](./images/validation/testing%20stories.JPG)<center>image 22</center>
-
+![./images/Main_Menu.JPG](./images/validation/testing%20stories%201.JPG )<center>image 22</center>
 
 
 The template provided by Code Institute as provided to all students is assumed to be tested for the above.
 
-Using the file template [code institute], no ajor errors remain in current coding version. As a relevant comment, there have been fixed over 100 errors. 
+Using the file template [code institute], no ajor errors remain in current coding version. 
 
+#### Debugging
 
+There have been fixed over 100 errors, and the main bugs found are as follow:
 
+- #### Formating: Indetation, Trailing whitespace (W291), lines breaks, No newline at end of file (W292), .
 
+- #### Update and Delete option could not differenciate when the user enters 0, 1, and 2: This Bug displayed different error message such as ValueError: invalid literal for int() with base 10, IndexError: list out of range, Traceback (most recent call last). See solution in image 23 below.
 
+- #### Bug solution:
+![./images/Main_Menu.JPG](./images/validation/Bug%20solution%20update%20and%20delete%20option.JPG)<center>image 23</center>
 
+- #### Deployment was not proforming correctly: It was not added the colorama framework to requirement.txt file causing issues. Thanks to Slack feedback I could solved this issue. 
 
+#### Deployment
+The platform used for the project's implementation is Heroku. The steps to deploy the code are as follow:
 
+- ##### Fork/Clone this public repository.
+- ##### Open a Heroku account.
+- ##### Create a new App with Heroku.
+- ##### Add 2 building packs in settings.
+- ###### Python
+- ###### NodeJS
+- ##### Ensure the buildpacks are created in that sequence.
+- ##### Allowing Heroku access to GitHub, and link the new app to the relevant repository.
+- ##### Select if or not to enable Automatic Deploys. If enabled, the deployed app will update automatically with each push to GitHub.
+- ##### Click Deploy
 
+#### Credits
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-   
-  ### Flowhart
-  - #### See the link below:
-  https://app.code2flow.com/ylb4Oj9KgP9t.pdf
-<center>o</center>
-
-
-
-
- ### Design
- 
-
-
-
-
-
+- ###### Emoticon: https://www.alt-codes.net/smiley_alt_codes.php
+- ###### Template and Terminal: https://github.com/Code-Institute-Org/python-essentials-template
+- ###### Software background: The current software version is based on the file named software background.zip
+- ###### Styling: Colorama was imported to this software version.
+- ###### Date: Datetime was imported to this software version.
+- ###### Text & PDF files: Textwrap FPDF were imported to this software version.
