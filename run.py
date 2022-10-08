@@ -172,14 +172,14 @@ while True:
     print(' ✔ Export Current Inventory report PDF              [6]')
     print(' ✔ Exit                                             [7]')
     print("=======================================================")
-    userInput = input('Select 1-6:\n ')
+    userInput = input('Select 1-7:\n ')
     if userInput == "1":
         # Add a Windturbines
         inventory.addTurbine()
     elif userInput == '2':
         # Remove a Windturbine
         if len(inventory.turbines) < 1:
-            print(Fore.RED + 'WindTurbine(s) not found!!!')
+            print(Back.RED + 'WindTurbine(s) not found!!!')
             continue
         inventory.viewInventory()
         item = input('Enter # of Windturbine to be deleted:\n ')
