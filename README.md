@@ -153,16 +153,16 @@ The coding includes class level(s) to create different instances depending on us
   - #### List: Wrong input and correct input. Result: Issue detected.
 ![./images/Main_Menu.JPG](./images/validation/validation%20update%20item.JPG)<center>image 22</center>
 
- - #### Accessibility & Performance. Result: Issue detected. Please, see results below:
+ - #### Accessibility & Performance. Score: Please, see results below:
 
 ![./images/Main_Menu.JPG](./images/validation/accessability%20and%20perforance%20test.JPG)<center>image 23</center>
 
 - #### Browser Testing. 
-Result: Issue detected.Please, see results below:
+Result: Please, see performence below:
 ![./images/Main_Menu.JPG](./images/validation/coding%20performance.JPG)<center>image 24</center>
 
 - #### Testing User Stories (Functionality). 
-Result: request completed. Please, see results below:
+Result: Requirements completed. Please, see results below:
 ![./images/Main_Menu.JPG](./images/validation/testing%20stories%201.JPG )<center>image 25</center>
 
 
