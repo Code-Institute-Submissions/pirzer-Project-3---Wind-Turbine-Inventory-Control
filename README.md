@@ -3,18 +3,38 @@ The following project consists of a **quick tool for tracking wind turbines in i
 [Link to live site](https://windturbines-project3.herokuapp.com/)
 ![Responsive mock-up](./images/presentation.JPG)
 
-### Objectives
+## Index - Table of Contents
+
+- [Objective](#objective)
+- [Planning](#planning)
+- [UX](#ux)
+- [Design](#design)
+  - [Implementation](#implementation)
+  - [Flowchart](#flowchart)
+- [Data Model](#data-model)
+  - [Testing](#testing)
+    - [Validator Testing](#validator-testing)
+    - [Browser Testing](#browser-testing)
+    - [Testing User Stories](#testing-user-stories-functionality)
+
+- [Debugging](#debugging)
+
+- [Deployment](#deployment)
+
+- [Improvements](#improvements)
+    - [Existing Features](#existing-features)
+    - [Future Features](#possible-future-features)
+
+- [Credits](#credits)
+
+
+
+
+
+
+
+### Objective
 * Develop a friendly checking inventory tool to control wind turbine in the warehouse. The information can be printed out in TXT and PDF files. 
-
-### User Stories - UX
-
-- ### As an employee of an inventory department, I would like the following:
-  - ### Friendly tool to add wind turbines to the company's inventory.
-  - ### Friendly tool to remove wind turbines from the company's inventory.
-  - ### Friendly tool to see a quick breakdown of the company's inventory. 
-  - ### Friendly tool to update/modify details of the wind turbines in inventory. 
-  - ### Friendly tool to print out wind turbines from the company's inventory.
-  - ### Friendly option to exit the software.
 
 ### Feature Planning - Snapshot.
 
@@ -23,6 +43,16 @@ The following project consists of a **quick tool for tracking wind turbines in i
 - ### Smooth Add, Remove, Visuallitation, and Update of data for the user. 
 - ### Export options of txt & pdf files with a basic breakdown of the data entered by the user(s).
 - ### Straight forward option to exit.
+
+### UX
+
+- ### As an employee of an inventory department, I would like the following:
+  - ### Friendly tool to add wind turbines to the company's inventory.
+  - ### Friendly tool to remove wind turbines from the company's inventory.
+  - ### Friendly tool to see a quick breakdown of the company's inventory. 
+  - ### Friendly tool to update/modify details of the wind turbines in inventory. 
+  - ### Friendly tool to print out wind turbines from the company's inventory.
+  - ### Friendly option to exit the software.
 
 ### Design
 The present software version is a raw tool, i.e., no images. However, it has been included some **symbol emoji** and colours also. The colors used are as follow: **Green, Blue, Cyan, Yellow, and Red**.
@@ -68,10 +98,6 @@ The current version offers to the user(s) the following options: ADD items, LIST
 ### Flowchart
 See the map out below:
   ![./images/Main_Menu.JPG](./images/validation/flowchart.JPG)
-
-
-
-
 
 ### Data Model
 
@@ -131,10 +157,12 @@ The coding includes class level(s) to create different instances depending on us
 
 ![./images/Main_Menu.JPG](./images/validation/accessability%20and%20perforance%20test.JPG)<center>image 21</center>
 
-- #### Browser Testing. Result: Issue detected.Please, see results below:
+- #### Browser Testing. 
+Result: Issue detected.Please, see results below:
 ![./images/Main_Menu.JPG](./images/validation/coding%20performance.JPG)<center>image 22</center>
 
-- #### Testing User Stories (Functionality). Result: request completed. Please, see results below:
+- #### Testing User Stories (Functionality). 
+Result: request completed. Please, see results below:
 ![./images/Main_Menu.JPG](./images/validation/testing%20stories%201.JPG )<center>image 22</center>
 
 
@@ -169,7 +197,7 @@ The platform used for the project's implementation is Heroku. The steps to deplo
 - ##### Select if or not to enable Automatic Deploys. If enabled, the deployed app will update automatically with each push to GitHub.
 - ##### Click Deploy
 
-#### Potential Future Improvements
+#### Improvements
 - ##### Enhance the code structure, cleaning it up reviewing and defining a function for each task expected. This will help to add more complicated code lines to maintain a clean and really useful way structural-wise.  
 - ##### Add more validation against user's errors such as limiting the length of digits, defining a clear format for the year field [range time], filtering out the mixing of characters & letters per field, adding regular expressions control for the current and future fields, and adding email fields and its validation also. Eventually, report options can be tied with the submission of & text files via email, and improve the interface with the user(s) to make it more friendly, among others.
 
