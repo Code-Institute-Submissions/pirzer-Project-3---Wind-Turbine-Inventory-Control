@@ -60,7 +60,7 @@ The present software version is a raw tool, i.e., no images. However, it has bee
 The current version offers to the user(s) the following options: ADD items, LIST items, REMOVE items, UPDATE items, PRINT REPORT IN TXT & PDF files.
 
   ### Implementation
-  This tool support structure is as follows:
+  See the following:
   - #### Main Menu: ADD, DELETE, LIST,  UDPATE, EXPORT FILES  [PDF & TXT], & EXIT options. See image 1 below.
 
 ![./images/Main_Menu.JPG](./images/Main_Menu.JPG)
