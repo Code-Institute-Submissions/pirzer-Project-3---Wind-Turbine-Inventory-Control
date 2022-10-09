@@ -97,7 +97,7 @@ The current version offers to the user(s) the following options: ADD items, LIST
 
 ### Flowchart
 See the map out below:
-  ![./images/Main_Menu.JPG](./images/validation/flowchart.JPG)<center>image 10</center>
+  ![./images/Main_Menu.JPG](./images/validation/flowchart1.jpg)<center>image 10</center>
 
 ### Data Model
 
