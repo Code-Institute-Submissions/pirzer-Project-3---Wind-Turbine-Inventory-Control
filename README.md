@@ -40,7 +40,7 @@ The following project consists of a **quick tool for tracking wind turbines in i
 
 - ### Smooth user navigation process when the tool is used.
 - ### Display current date.
-- ### Smooth Add, Remove, Visuallitation, and Update of data for the user. 
+- ### Smooth Add, Remove, Visualisation, and Update of data for the user. 
 - ### Export options of txt & pdf files with a basic breakdown of the data entered by the user(s).
 - ### Straight forward option to exit.
 
@@ -55,7 +55,7 @@ The following project consists of a **quick tool for tracking wind turbines in i
   - ### Friendly option to exit the software.
 
 ### Design
-The present software version is a raw tool, i.e., no images. However, it has been included some **symbol emoji** and colours also. The colors used are as follow: **Green, Blue, Cyan, Yellow, and Red**.
+The present software version is a raw tool, i.e., no images. However, it has included some **symbol emoji** and colours also. The colors used are as follow: **Green, Blue, Cyan, Yellow, and Red**.
 
 The current version offers to the user(s) the following options: ADD items, LIST items, REMOVE items, UPDATE items, PRINT REPORT IN TXT & PDF files.
 
@@ -105,7 +105,7 @@ See the map out below:
 The coding includes class level(s) to create different instances depending on user choice and navigation.
 
 - #### Error Handling / Validation
-The draft or initial version didn't include any statement or code clause to capture and inform if the user's input were valid or invalid, the print statement was used only. However, there have been included functions and statements to improve the current software version regarding errors detection.
+The draft or initial version didn't include any statement or code clause to capture and inform if the user's input were valid or invalid, the print statement only was used. However, there have been included functions and statements to improve the current software version regarding errors detection.
 
 If and try/except statements were implemented all over the coding to handle errors. However, this demands more time testing to detect as many user errors as possible to improve more the code and mitigate issues. See main comments below.
 
@@ -168,13 +168,13 @@ Result: Requirements completed. Please, see results below:
 
 The template provided by Code Institute as provided to all students is assumed to be tested for the above.
 
-Using the file template [code institute], no ajor errors remain in current coding version. 
+Using the file template [code institute], no major errors remain in current coding version. 
 
 #### Debugging
 
-There have been fixed over 100 errors, and the main bugs found are as follow:
+Over 100 errors have been fixed, and the main bugs found are as follow:
 
-- #### Formating: Indetation, Trailing whitespace (W291), lines breaks, No newline at end of file (W292), .
+- #### Formating: Indentation, Trailing whitespace (W291), lines breaks, No newline at end of file (W292), .
 
 - #### Update and Delete option could not differenciate when the user enters 0, 1, and 2: This Bug displayed different error message such as ValueError: invalid literal for int() with base 10, IndexError: list out of range, Traceback (most recent call last). See solution in image 23 below.
 
@@ -198,8 +198,8 @@ The platform used for the project's implementation is Heroku. The steps to deplo
 - ##### Click Deploy
 
 #### Improvements
-- ##### Enhance the code structure, cleaning it up reviewing and defining a function for each task expected. This will help to add more complicated code lines to maintain a clean and really useful way structural-wise.  
-- ##### Add more validation against user's errors such as limiting the length of digits, defining a clear format for the year field [range time], filtering out the mixing of characters & letters per field, adding regular expressions control for the current and future fields, and adding email fields and its validation also. Eventually, report options can be tied with the submission of & text files via email, and improve the interface with the user(s) to make it more friendly, among others.
+- ##### Enhance the code structure, cleaning it up reviewing and defining a function for each task expected. This will help to add more complicated code lines to maintain a clean and really useful approach structural-wise.  
+- ##### Add more validation against user's errors such as limiting the length of digits, defining a clear format for the year field [range time], filtering out the mixing of characters & letters per field, adding regular expressions control for the current and future fields, and adding email fields and its validation also. Eventually, report options can be linked  with the submission of & text files via email, and improve the interface with the user(s) to make it more friendly, among others.
 
 #### Credits
 
